@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@raw/badge_leaf1"
+    android:tint="#0073FF"
+    android:tintMode="multiply" />
+
+

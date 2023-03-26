@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@raw/badge_stars1"
+    android:tint="#FF003B"
+    android:tintMode="multiply" />
+
+

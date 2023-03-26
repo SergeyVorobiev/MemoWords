@@ -1,0 +1,785 @@
+<resources>
+
+    <!-- General -->
+    <string name="def_dict_name">Dictionary %s</string>
+    <string name="no_dict_to_move">No dictionaries to move sample into</string>
+    <string name="app_header">Memo</string>
+    <string name="notsheetservice">Can not get spreadsheets</string>
+    <string name="zero_number">0</string>
+    <string name="sign_in_failed">Sign in failed: %s</string>
+    <string name="interrupt">Interrupt</string>
+    <string name="seconds_remain">Wait %.1f sec</string>
+    <string name="default_spreadsheet_name">📔 Spreadsheet</string>
+    <string name="counter">%d / %d</string>
+    <string name="set_the_language">Please set the language for the dictionary</string>
+    <string name="load_texture_error">Video card on your phone support only %d textures to load but need 5</string>
+    <string name="load_gl_error">Video card on your phone can not run a game</string>
+    <string name="from">%d from %d</string>
+    <string name="time">%dm</string>
+    <string name="update">UPDATE</string>
+    <string name="default_notebook_name">New Notebook</string>
+    <string name="empty_counter">/ %d</string>
+    <string name="empty">Empty</string>
+    <string name="shelves_item_name">shelves</string>
+    <string name="dictionaries_item_name">dictionaries</string>
+    <string name="notes_item_name">notes</string>
+    <string name="notebooks_item_name">notebooks</string>
+    <string name="percentage">%d%%</string>
+    <string name="calculate">calculate…</string>
+    <string name="more_than">> %d</string>
+    <string name="too_fast">Too fast</string>
+    <string name="left_right_percentage">%d%% / %d%%</string>
+    <string name="positive_percentage">%s + %.2f%%</string>
+    <string name="negative_percentage">%s - %.2f%%</string>
+    <string name="all_percentage">%.1f%%</string>
+    <string name="general_dialog_button_delete">DELETE</string>
+    <string name="general_dialog_button_merge">Merge</string>
+    <string name="general_dialog_button_cancel">Cancel</string>
+    <string name="general_dialog_button_cancel2">Cancel</string>
+    <string name="add">Add</string>
+    <string name="share_file_name">memo</string>
+    <string name="share_file_name_dict">dictionary</string>
+    <string name="share_file_name_sheet">spreadsheet</string>
+    <string name="share_file_name_notebook">notebook</string>
+    <string name="new_dictionary">New Dictionary</string>
+    <string name="retry_button_label">Retry</string>
+    <string name="only_from_start">Only from start</string>
+    <string name="load_progress_message">Please do not change A2:A, B2:B, E2:E, F - ranges, if you want the progress to be loaded back.
+The progress will be loaded only for - %s</string>
+
+    <!-- Ranks -->
+    <string name="rookie">🧑 Rookie</string>
+    <string name="beginner">🧑 Beginner</string>
+    <string name="seasoned">🧑 Seasoned</string>
+    <string name="adept">🧑 Adept</string>
+    <string name="master">🧑 Master</string>
+    <string name="guru">🧑 Guru</string>
+
+    <!-- fragment_debug.xml -->
+    <string name="no_crashes">No crashes</string>
+    <string name="clear_crash">Clear crash message</string>
+
+    <!-- DebugFragment.java -->
+    <string name="debug_screen_header">Crash screen</string>
+
+    <!-- RecyclerDictionaryMergeAdapter.java -->
+    <string name="merge_dict_header">Do you want to merge it into \'%s\'?</string>
+
+    <!-- RecyclerDictionariesAdapter.java -->
+    <string name="spreadsheet_id_format">%s %s</string>
+
+    <!-- RecyclerSamplesAdapter.java -->
+    <string name="sample_train_empty">(never)</string>
+    <string name="sample_date_format">%s (%dd ago)</string>
+    <string name="sample_date_today_format">%s (today)</string>
+
+    <!-- SampleRemover.java -->
+    <string name="delete_sample_header">Do you want to delete this sample?</string>
+
+    <!-- AuthorPageDialog.java -->
+    <string name="author_dialog_header">Do you want to open the author\'s page?</string>
+    <string name="author_dialog_ok">Open</string>
+    <string name="author_dialog_cancel">Cancel</string>
+
+    <!-- NoteRemover.java -->
+    <string name="delete_note_header">Do you want to delete \'%s\' note?</string>
+
+    <!-- ShelvesFragment.java -->
+    <string name="shelves_title">Shelves</string>
+    <string name="shelf_example_name">Shelf example %s</string>
+    <string name="dictionary_example_name">Dictionary example %s</string>
+
+    <!-- menu_group.xml -->
+    <string name="account_button_description">Account</string>
+    <string name="more_button_description">More</string>
+    <string name="back_button_description">Back</string>
+    <string name="search_description">Search</string>
+
+    <!-- dialog_new_notebook.xml -->
+    <string name="new_notebook_dialog_header">New notebook</string>
+    <string name="notebook_dialog_input_name_hint">Notebook name</string>
+
+    <!-- dialog_help.xml -->
+    <string name="dialog_help_header">Help</string>
+
+    <!-- dialog_new_note.xml -->
+    <string name="new_note_dialog_header">New note</string>
+    <string name="note_dialog_input_header_hint">Header</string>
+    <string name="note_dialog_input_number_hint">Chapter number (empty - 0)</string>
+    <string name="note_dialog_input_content_hint">Content</string>
+
+    <!-- dialog_update_notebook.xml -->
+    <string name="dialog_update_notebook_header">Update notebook</string>
+    <string name="dialog_update_notebook_input_hint">Notebook name</string>
+
+    <!-- dialog_update_note.xml -->
+    <string name="dialog_update_note_header">Update note</string>
+
+    <!-- SamplesFragment.java -->
+    <string name="samples_title">Samples</string>
+
+    <!-- RepetitionFragment.java -->
+    <string name="repetition_title">Repetition</string>
+
+    <!-- EndTrainDialog.java -->
+    <string name="correct_answered">"%d from %d"</string>
+    <string name="score">🚀\u0020Today\'s Score: %d (+%d)</string>
+    <string name="train_time">⌛\u0020Time: %s</string>
+
+    <!-- SheetsFragment.java -->
+    <string name="sheets">sheets</string>
+    <string name="sheets_fragment_title">Sheets</string>
+    <string name="login_to_see_sheets">Please sign in with Google and refresh</string>
+
+    <!-- SpreadsheetsFragment.java -->
+    <string name="spreadsheets">spreadsheets</string>
+    <string name="spreadsheets_title">Spreadsheets</string>
+
+    <!-- item_sample.xml -->
+    <string name="sound_content_description_left">Sound left</string>
+    <string name="sound_content_description_right">Sound right</string>
+    <string name="translated_by">Translated by</string>
+    <string name="arrow_content_description">Arrow</string>
+
+    <!-- dialog_delete_spreadsheet.xml -->
+    <string name="delete_spreadsheet_button">DELETE</string>
+    <string name="dialog_delete_spreadsheet_header">Do you want to delete \'%s\' record?</string>
+    <string name="dialog_delete_spreadsheet_note">This action will delete table id from the app</string>
+
+    <!-- dialog_new_sheet.xml -->
+    <string name="sheet_dialog_input_name_hint">Sheet name</string>
+    <string name="sheet_dialog_new_header">New sheet</string>
+
+    <!-- dialog_new_sample.xml -->
+    <string name="swap_content_description">Swap</string>
+    <string name="reset_progress">Reset progress</string>
+
+    <!-- dialog_sort_by.xml -->
+    <string name="sort_by_title">Sort by…</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="sort_by_kind">Sort by kind</string>
+    <string name="sort_by_left">Sort by left</string>
+    <string name="sort_by_right">Sort by right</string>
+
+    <!-- dialog_new_dictionary.xml -->
+    <string name="dictionary_dialog_input_name_hint">Dictionary name</string>
+    <string name="dictionary_dialog_load_from_spreadsheet">Load from Google spreadsheet:</string>
+    <string name="dictionary_dialog_choose_languages">Choose languages:</string>
+    <string name="choose_left_language">Left values</string>
+    <string name="choose_right_language">Right values</string>
+    <string name="new_dictionary_dialog_retry">Retry</string>
+    <string name="new_dictionary_dialog_please_login">Please sign in with Google</string>
+    <string name="unfold_languages_content_description">Unfold languages</string>
+    <string name="speakable_text_unfold_sheets">Unfold sheets</string>
+    <string name="speakable_left_language">Choose left language</string>
+    <string name="speakable_right_language">Choose right language</string>
+    <string name="bind_spreadsheet">Bind spreadsheet</string>
+    <string name="load_progress">Load progress</string>
+
+    <!-- dialog_update_dictionary.xml -->
+    <string name="dictionary_dialog_update_switch_label">Update from sheet</string>
+    <string name="dictionary_dialog_delete_samples_checkbox">Delete local samples</string>
+    <string name="dictionary_update_examples_checkbox">Update examples from sheet</string>
+
+    <!-- dialog_update_sheet.xml -->
+    <string name="sheet_dialog_update_header">Rename the sheet</string>
+
+    <!-- dialog_delete_notebook.xml -->
+    <string name="delete_notebook_button">DELETE</string>
+    <string name="dialog_delete_notebook_header">Do you want to delete \'%s\' notebook?</string>
+    <string name="dialog_delete_note_header">Do you want to delete \'%s\' note?</string>
+    <string name="dialog_delete_notebook_warning">This action will delete all notes inside</string>
+    <string name="dialog_delete_notebook_confirm">Confirm</string>
+    <string name="notebook_dialog_update_switch_label">Update from sheet</string>
+    <string name="notebook_dialog_delete_samples_checkbox">Delete local notes</string>
+
+    <!-- dialog_delete_shelf.xml -->
+    <string name="delete_shelf_button">DELETE</string>
+    <string name="dialog_delete_shelf_header">Do you want to delete \'%s\' shelf?</string>
+    <string name="dialog_delete_shelf_warning">This action will delete all dictionaries and samples inside</string>
+    <string name="dialog_delete_shelf_confirm">Confirm</string>
+
+    <!-- dialog_delete_dictionary.xml -->
+    <string name="delete_dict_button">DELETE</string>
+    <string name="dialog_delete_dict_header">Do you want to delete \'%s\' dictionary?</string>
+    <string name="dialog_delete_dict_warning">This action will delete all samples inside</string>
+    <string name="dialog_delete_dict_confirm">Confirm</string>
+
+    <!-- dialog_clear_samples.xml -->
+    <string name="clear_samples_warning">Wipe values in a chosen column, select new language, send a dictionary to a sheet to perform auto translation.</string>
+    <string name="clear_left_values">Wipe left values</string>
+    <string name="clear_right_values">Wipe right values</string>
+    <string name="clear_button">Wipe</string>
+    <string name="clear_examples">Wipe examples</string>
+    <string name="clear_kinds">Wipe kinds</string>
+
+    <!-- dialog_delete_sheet.xml -->
+    <string name="delete_tab_button">DELETE</string>
+    <string name="dialog_delete_tab_header">Do you want to delete \'%s\' sheet?</string>
+    <string name="dialog_delete_tab_warning">This action will delete the sheet from server side</string>
+    <string name="dialog_delete_tab_confirm">Confirm</string>
+
+    <!-- dialog_new_spreadsheet.xml -->
+    <string name="spreadsheet_dialog_new_header">New spreadsheet</string>
+    <string name="spreadsheet_dialog_get_name">Get a name from the server</string>
+    <string name="spreadsheet_dialog_update_header">Update spreadsheet</string>
+    <string name="spreadsheet_dialog_input_name_hint">Spreadsheet name (arbitrarily)</string>
+    <string name="spreadsheet_dialog_input_id_hint">Spreadsheet id (existed)</string>
+    <string name="spreadsheet_dialog_icon_content_description">Spreadsheet icon</string>
+    <string name="speakable_type">Choose type</string>
+
+    <!-- NewSpreadsheetDialog.java -->
+    <string name="spreadsheet_type0">Any</string>
+    <string name="spreadsheet_type1">Dictionaries</string>
+    <string name="spreadsheet_type2">Notebooks</string>
+
+    <!-- item_move_to_dictionary.xml -->
+    <string name="dict_icon_checker_content_description">Dictionary icon checker</string>
+
+    <!-- item_spreadsheet.xml -->
+    <string name="copy_spreadsheet_content_description">Copy spreadsheet id</string>
+    <string name="icon_spreadsheet_content_description">Spreadsheet icon</string>
+
+    <!-- item_ss_preset.xml -->
+    <string name="preset_ss_content_description">Select preset icon</string>
+    <string name="preset_header">Tap to add</string>
+    <string name="preset_wait_header">Please wait</string>
+    <string name="preset_error_header">Error</string>
+
+    <!-- dialog_language.xml -->
+    <string name="dialog_language_header">App language</string>
+    <string name="dialog_change_button">Change</string>
+
+    <!-- dialog_spreadsheet_send.xml -->
+    <string name="share_content_description">Share</string>
+    <string name="copy_content_description">Copy</string>
+    <string name="ss_copy">Copy</string>
+    <string name="ss_share">Share</string>
+
+    <!-- item_chosen_sheet.xml -->
+    <string name="sheet_cancel_button_description">Sheet cancel button</string>
+
+    <!-- item_choosen_spreadsheet.xml -->
+    <string name="spreadsheet_cancel_button_description">Spreadsheet cancel button</string>
+    <string name="spreadsheet_icon_description">Spreadsheet icon</string>
+
+    <!-- item_help.xml -->
+    <string name="image_help_description">Image help</string>
+
+    <!-- item_shelf.xml -->
+    <string name="shelf_icon_content_description">Shelf icon</string>
+    <string name="shelf_label">Shelf</string>
+
+    <!-- item_notebook.xml -->
+    <string name="notebook_icon_content_description">Notebook icon</string>
+    <string name="notebook_author_content_description">Notebook author</string>
+    <string name="notebook_label">Notebook</string>
+
+    <!-- item_graph.xml -->
+    <string name="today_score">🚀\u0020Today\'s Score: %d</string>
+    <string name="reaction_speed">🔎\u0020Recall speed: %.2f sec</string>
+    <string name="average_per_sample">✨\u0020Average per sample: %d</string>
+    <string name="trainings">✨\u0020Workouts: %d</string>
+
+    <!-- item_dictionary.xml -->
+    <string name="dict_icon_content_description">Dictionary icon</string>
+    <string name="dict_rate_content_description">Dictionary rate</string>
+    <string name="dict_graph_content_description">Dictionary graph</string>
+    <string name="dict_author_content_description">Dictionary author</string>
+    <string name="dict_label">Dictionary</string>
+
+    <!-- fragment_sheets.xml -->
+    <string name="add_sheet_content_description">Add sheet</string>
+
+    <!-- fragment_samples.xml -->
+    <string name="content_description_train">Gym</string>
+    <string name="content_description_swap">Sample swap</string>
+    <string name="content_description_sample_add">Sample add</string>
+
+    <!-- fragment_spreadsheets.xml -->
+    <string name="add_spreadsheet_content_description">Add spreadsheet</string>
+
+    <!-- fragment_dictionaries.xml -->
+    <string name="add_dictionaries_content_description">Add dictionary</string>
+
+    <!-- fragment_notebooks.xml -->
+    <string name="add_notebooks_content_description">Add notebook</string>
+    <string name="notebook_label_counter">Notebooks</string>
+
+    <!-- fragment_notes.xml -->
+    <string name="add_notes_content_description">Add note</string>
+
+    <!-- dictionary_find_word.xml -->
+    <string name="dictionary_find_dialog_header">Find a sample</string>
+
+    <!-- DictionariesFragment.java -->
+    <string name="move_title">Move to</string>
+    <string name="copy_title">Copy to</string>
+    <string name="add_title">Add to</string>
+    <string name="dict_fragment_title">Dictionaries</string>
+
+    <!-- DictionaryMergeFragment.java -->
+    <string name="dict_merge_fragment_title">Merge to</string>
+
+    <!-- NotebooksFragment.java -->
+    <string name="notebooks_title">Notebooks</string>
+
+    <!-- NotesFragment.java -->
+    <string name="notes_title">Notes</string>
+
+    <!-- RecyclerLanguageAdapter.java -->
+    <string name="default_language">Default</string>
+    <string name="english_language">English</string>
+    <string name="russian_language">Russian</string>
+
+    <!-- dialog_sign.xml -->
+    <string name="sign_out_dialog_header">Account</string>
+    <string name="sign_in_button_label">Sign in with Google</string>
+    <string name="sign_out_button_label">Sign out</string>
+    <string name="sign_out_dialog_auto_logout">Auto sign out on exit</string>
+    <string name="sign_out_dialog_mobile_internet">Allow mobile internet</string>
+    <string name="account_image_content_description">Account image</string>
+    <string name="privacy_policy_text">privacy policy</string>
+    <string name="privacy_policy_header">Privacy policy</string>
+    <string name="privacy_policy_close_button_description">Close privacy policy</string>
+    <string name="remember_bar_description">Remember bar</string>
+    <string name="score_account">Today\'s score:</string>
+    <string name="all_score_account">Total:</string>
+    <string name="all_train_account">Train time:</string>
+
+    <!-- SignDialog.java -->
+    <string name="dict_count_label">📚 Dictionaries:</string>
+    <string name="samples_count_label">🧩 Samples:</string>
+    <string name="notes_count_label">📄 Notes:</string>
+
+    <!-- SendSampleDialog.java -->
+    <string name="send_sample_dialog_header">Move sample into</string>
+
+    <!-- dialog_start_train.xml -->
+    <string name="start_mode_header">Mode:</string>
+    <string name="start_mode_game">Game</string>
+    <string name="start_mode_repetition">Repetition</string>
+    <string name="start_mode_guess">Guess by word</string>
+    <string name="start_mode_type_normal">Normal</string>
+    <string name="start_mode_type_hard">Hard</string>
+    <string name="start_mode_sentence_type_normal">Normal</string>
+    <string name="start_mode_sentence_type_hard">Reverse</string>
+    <string name="start_mode_sound">Guess by sound</string>
+    <string name="start_mode_sentence">Guess by sentence</string>
+    <string name="train_dialog_header">Start options</string>
+    <string name="enunciate_words">Enunciate words</string>
+    <string name="exclude_correctly_answered">Exclude remembered</string>
+    <string name="only_wrong_answered">Only wrong answered</string>
+    <string name="start_words_percentage">100% of words</string>
+    <string name="start_words_percentage_adjust">%d%% of words (%d)</string>
+    <string name="start_train_button">Start</string>
+
+    <!-- TrainFragment.java -->
+    <string name="train_percentage">%.1f%%</string>
+    <string name="train_title">Gym</string>
+
+    <!-- GameFragment.java -->
+    <string name="game_title">Game</string>
+
+
+    <!-- fragment_train.xml -->
+    <string name="speech_content_description">Speech</string>
+    <string name="answer0_description">Answer 1</string>
+    <string name="answer1_description">Answer 2</string>
+    <string name="answer2_description">Answer 3</string>
+    <string name="answer3_description">Answer 4</string>
+
+    <!-- fragment_repetition.xml -->
+    <string name="repetition_replay">Replay</string>
+
+    <!-- dialog_new_shelf.xml -->
+    <string name="new_shelf_name_hint">Shelf name</string>
+    <string name="new_shelf_dialog_icon_content_description">Shelf icon</string>
+    <string name="new_shelf_dialog_header">New shelf</string>
+    <string name="load_progress_shelf">Load progress</string>
+    <string name="new_shelf_name_default">Shelf %s</string>
+
+    <!-- dialog_send_shelf.xml -->
+    <string name="send_shelf">Save the shelf to Google spreadsheet</string>
+    <string name="send_shelf_warning">The data will be replaced in existed sheets with the same dictionaries\' names</string>
+
+    <!-- dialog_send_dictionary.xml -->
+    <string name="send_dictionary_header">Dictionary</string>
+    <string name="send_dictionary_radio_bind">Bind Google spreadsheet</string>
+    <string name="send_dictionary_radio_merge">Merge</string>
+    <string name="send_dictionary_radio_move">Move</string>
+    <string name="send_dictionary_radio_copy">Copy</string>
+    <string name="send_dictionary_radio_copy_to_sheet">Send to Google spreadsheet</string>
+    <string name="send_dictionary_radio_share">Share</string>
+    <string name="save_progress">Save progress</string>
+    <string name="send_dictionary_radio_share_spreadsheet">Share Google spreadsheet</string>
+    <string name="choose_sheet_label">Choose a sheet:</string>
+    <string name="choose_spreadsheet_label">Choose a Google spreadsheet:</string>
+    <string name="replace_data_warning">Existed data will be replaced in A:N range</string>
+    <string name="content_description_cancel_send_sheet">Cancel sent sheet</string>
+
+    <!-- dialog_send_notebook.xml -->
+    <string name="send_notebook_header">Notebook</string>
+    <string name="send_notebook_radio_copy">Copy</string>
+    <string name="send_notebook_radio_copy_to_sheet">Send to Google spreadsheet</string>
+    <string name="send_notebook_radio_share">Share</string>
+    <string name="send_notebook_radio_share_spreadsheet">Share Google spreadsheet</string>
+    <string name="choose_sheet_notebook_label">Choose a sheet:</string>
+    <string name="replace_notebook_data_warning">Existed data will be replaced in A:H range</string>
+    <string name="content_notebook_description_cancel_send_sheet">Cancel sending sheet</string>
+
+    <!-- SendDictionaryDialog.java -->
+    <string name="send_dictionary_radio_copy_to_sheet_login">Send to Google spreadsheet (sign in)</string>
+    <string name="send_dictionary_radio_copy_to_bind_login">Bind Google spreadsheet (sign in)</string>
+
+    <!-- SendNotebookDialog.java -->
+    <string name="send_notebook_radio_copy_to_sheet_login">Send to Google spreadsheet (sign in)</string>
+
+    <!-- dialog_add_dictionary.xml -->
+    <string name="dialog_add_dictionary_header">Add dictionary</string>
+    <string name="dialog_add_name_hint">Name</string>
+    <string name="dialog_add_notebook_header">Add notebook</string>
+    <string name="dialog_add_spreadsheet_header">Add Google spreadsheet</string>
+
+    <!-- dialog_find_word.xml -->
+    <string name="search_result_label">Search:</string>
+
+    <string name="app_name">Memo words</string>
+
+    <!-- dialog_save_load_spreadsheets.xml -->
+    <string name="save_load_spreadsheet_header">Save / Load Google spreadsheet ids</string>
+    <string name="save_spreadsheet_into">Save Google spreadsheet ids to:</string>
+    <string name="load_spreadsheet_from">Load Google spreadsheet ids from:</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="shelves_fragment_label">Shelves Fragment</string>
+    <string name="move_or_copy_label">Move or Copy Fragment</string>
+    <string name="spreadsheets_fragment_label">Spreadsheet Fragment</string>
+    <string name="debug_fragment_header">Debug Fragment</string>
+    <string name="sheets_fragment_label">Sheets Fragment</string>
+    <string name="notebooks_fragment_label">Notebooks Fragment</string>
+    <string name="notes_fragment_label">Notes Fragment</string>
+    <string name="dictionaries_fragment_label">Dictionaries Fragment</string>
+    <string name="dictionary_merge_fragment_label">Dictionary Merge Fragment</string>
+    <string name="samples_fragment_label">Samples Fragment</string>
+    <string name="train_fragment_label">Train Fragment</string>
+    <string name="game_fragment_label">Game Fragment</string>
+    <string name="repetition_fragment_label">Repetition Fragment</string>
+
+
+    <string name="new_dictionary_dialog_header">New dictionary</string>
+    <string name="update_dictionary_dialog_header">Update dictionary</string>
+    <string name="update_sample_dialog_header">Update sample</string>
+    <string name="update_shelf_dialog_header">Rename shelf</string>
+    <string name="chooser_left_language_description">Left language</string>
+    <string name="chooser_right_language_description">Right language</string>
+    <string name="new_sample_dialog_header">New sample</string>
+
+    <string name="action_search">Search…</string>
+    <string name="action_sort_by">🔤\u0020\u0020\u0020\u0020Sort…</string>
+    <string name="action_sort_by_name">🔤\u0020\u0020\u0020\u0020Sort by name</string>
+    <string name="action_sort_by_date">🔤\u0020\u0020\u0020\u0020Sort by date</string>
+    <string name="action_spreadsheet_help">❔\u0020\u0020\u0020\u0020Help</string>
+    <string name="action_help">❔\u0020\u0020\u0020\u0020Help</string>
+    <string name="action_language">👅\u0020\u0020\u0020\u0020App language</string>
+    <string name="action_spreadsheet_presets">🗂️\u0020\u0020\u0020\u0020Presets</string>
+    <string name="action_spreadsheet_save_load">🗃️\u0020\u0020\u0020\u0020Save / Load</string>
+    <string name="action_sort_origin">🔤\u0020\u0020\u0020\u0020Sort by origin</string>
+    <string name="action_spreadsheets">🗃️\u0020\u0020\u0020\u0020Google Spreadsheets</string>
+    <string name="action_find_word">🔎\u0020\u0020\u0020\u0020Find…</string>
+    <string name="action_clear_samples">🧹\u0020\u0020\u0020\u0020Wipe translations</string>
+    <string name="action_notebooks">📔\u0020\u0020\u0020\u0020Notebooks</string>
+    <string name="action_sign_in">Account</string>
+    <string name="action_hide_remembered">📥\u0020\u0020\u0020\u0020Hide remembered</string>
+    <string name="action_show_remembered">📤\u0020\u0020\u0020\u0020Show remembered</string>
+
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="sample_example_label">Examples:</string>
+    <string name="image_example_label">Image:</string>
+
+    <!-- Sheet error messages. -->
+    <string name="no_internet">Please check internet connection</string>
+    <string name="spreadsheet_id_not_exist">Spreadsheet with such id does not exist</string>
+    <string name="no_permission">You do not have permission</string>
+    <string name="timeout">Timeout</string>
+    <string name="slow_connection">Slow internet connection, please try later</string>
+    <string name="unexpected_error">Unexpected error</string>
+    <string name="no_sheet">This spreadsheet has no sheets</string>
+
+    <!-- dialog_end_train.xml -->
+    <string name="results_header">Result</string>
+    <string name="average_score">Score per sample: %d</string>
+
+    <!-- Hints -->
+    <string name="sample_dialog_kind_hint">Kind (optional)</string>
+    <string name="sample_dialog_example_hint">Examples (optional)</string>
+    <string name="sample_dialog_left_value_hint">Left value</string>
+    <string name="sample_dialog_right_value_hint">Right value</string>
+
+    <!-- Toasts -->
+    <string name="toast_shelf_has_no_name">Shelf has no name</string>
+    <string name="toast_item_cannot_be_edited">This item can not be edited</string>
+    <string name="toast_dictionary_has_no_name">Dictionary has no name</string>
+    <string name="toast_empty_sample">Sample value can not be empty</string>
+    <string name="toast_not_enough_samples">Count of samples can not be less than %d</string>
+    <string name="toast_sheet_not_exist">Sheet \'%s\' does not exist</string>
+    <string name="toast_connect_to_spreadsheet">Cannot connect to spreadsheet, please check internet connection</string>
+    <string name="toast_no_connection">Something went wrong, please check internet connection</string>
+    <string name="toast_maximum_items">You have maximum amount of %s</string>
+    <string name="toast_choose_action">Please choose an action</string>
+    <string name="toast_choose_spreadsheet">Please choose a spreadsheet</string>
+    <string name="toast_choose_sheet">Please choose a sheet</string>
+    <string name="toast_cannot_copy_dictionary">Cannot copy dictionary</string>
+    <string name="toast_sheet_is_not_specified">Sheet name is not specified</string>
+    <string name="toast_spreadsheet_is_not_specified">Spreadsheet is not specified</string>
+    <string name="toast_broken_file">Can not read broken file</string>
+    <string name="toast_cannot_open_file">Can not open the file</string>
+    <string name="toast_wrong_reading_dictionary">Something went wrong due to reading dictionary with name \'%s\'</string>
+    <string name="toast_name_empty">Name can not be empty</string>
+    <string name="toast_notebook_name_empty">Notebook has no name</string>
+    <string name="toast_note_content_empty">Note has no content</string>
+    <string name="toast_note_header_empty">Note has no header</string>
+    <string name="toast_nothing_to_add">File is empty</string>
+    <string name="toast_nothing_to_save">Nothing to save</string>
+    <string name="toast_nothing_to_load">Nothing to load</string>
+    <string name="toast_cannot_add_dictionary">Cannot add dictionary</string>
+    <string name="toast_cannot_get_dictionaries">Cannot get dictionaries</string>
+    <string name="toast_cannot_add_shelf">Cannot add shelf</string>
+    <string name="toast_cannot_open_link">Cannot open link</string>
+    <string name="toast_cannot_add_spreadsheet">Cannot add spreadsheet</string>
+    <string name="toast_language_not_specified">Language is not specified</string>
+    <string name="toast_cannot_send_dictionary">Cannot send dictionary</string>
+    <string name="toast_cannot_merge_dictionary">Cannot merge dictionary</string>
+    <string name="toast_cannot_share_dictionary">Cannot share dictionary</string>
+    <string name="toast_cannot_share_notebook">Cannot share notebook</string>
+    <string name="toast_cannot_share_spreadsheet">Cannot share spreadsheet</string>
+    <string name="toast_cannot_move_dictionary">Cannot move dictionary</string>
+    <string name="toast_try_latter">Something went wrong, try latter</string>
+    <string name="toast_slow_internet">Slow internet, time is out</string>
+    <string name="toast_success">Success</string>
+    <string name="toast_not_all_samples_added">Not all samples has been added</string>
+    <string name="toast_cannot_load_settings">Cannot load settings</string>
+    <string name="toast_copied">Copied</string>
+    <string name="toast_spreadsheet_name_empty">Spreadsheet has no name</string>
+    <string name="toast_spreadsheet_id_empty">Spreadsheet has no id</string>
+    <string name="toast_sheet_name_empty">Sheet has no name</string>
+    <string name="toast_spreadsheet_exists">Spreadsheet with such id exists</string>
+    <string name="toast_please_login">Please sign in with Google</string>
+    <string name="toast_read_from_dictionary_error">Something went wrong due to reading from dictionary with name \'%s\'.</string>
+    <string name="toast_read_from_notebook_error">Something went wrong due to reading from notebook with name \'%s\'.</string>
+    <string name="toast_please_choose_column">Please choose a column</string>
+    <string name="toast_no_presets">There are no presets to load, try later</string>
+
+    <!-- Spreadsheet help -->
+    <string name="spreadsheet_help">
+        • To use Google spreadsheets you need to sign in with Google account. The app can not create or
+        remove Google spreadsheets and you can work only with existed ones. The app does not have instruments to fetch, analyze or send the data you have in your Google spreadsheets to anyone without your knowledge.
+        All the data fetched from Google spreadsheets is stored only on your device for your use but you can share the data with others by yourself, please see our <![CDATA[<a href="https://docs.google.com/document/d/1Pc7OXrJ6GQOGh4Q3-hKOL4-YcY62rbMtBgVW7LK-AN8">privacy policy</a>]]> for details.
+    </string>
+    <string name="spreadsheet_help1_0">• You can use Google spreadsheets to create and manage your dictionaries and notes, to perform auto-translations or to save dictionaries (with progress) / notebooks from the device.</string>
+
+    <string name="spreadsheet_help1_1">
+        • If you want to use Google spreadsheets from another account make sure that they are public or you have a personal access to them.
+    </string>
+    <string name="spreadsheet_help1_2">
+        • You can add / delete / rename sheets in added Google spreadsheets if they are placed in your account or if you have edit access to them.
+    </string>
+    <string name="spreadsheet_help2">• To add Google spreadsheet into the app you need to get Google spreadsheet id. You can get it from browser\'s string:</string>
+
+    <string name="spreadsheet_help3">• Sheet can have a header:</string>
+
+    <string name="spreadsheet_help4">
+        • A1: mdict / mnote / mcnote - are the code words representing dictionary / notebook / notebook without ability to copy it, accordingly.
+    </string>
+    <string name="spreadsheet_help5">
+        • B1: The Name of the dictionary / notebook.
+    </string>
+    <string name="spreadsheet_help6">
+        • C1: Language of left samples. It is used for speech and auto translation, can be empty.
+    </string>
+
+    <string name="spreadsheet_help7">
+        • D1: Language of right samples. It is used for speech and auto translation, can be empty.
+    </string>
+
+    <string name="spreadsheet_help8">
+        • E1: Last updated time. Can be empty. Date cell \'Lotus123\' or unix timestamp in seconds.
+    </string>
+
+    <string name="spreadsheet_help9">• You can use a formula - =GOOGLETRANSLATE(,,,) in cells of a sheet to perform auto translation
+        or you can clean a column of your dictionary, choose new language and send a dictionary to a sheet for auto translation:
+    </string>
+
+    <string name="spreadsheet_help10">
+        • F1: Author\'s social media name. Can be empty. One of:
+        \n\n•• Twitch: t:yourAccountName
+        \n\n•• Youtube: y:yourAccountId
+        \n\n•• Facebook: f:yourAccountName
+        \n\n•• Instagram: i:yourAccountName
+    </string>
+
+    <!-- Help -->
+    <string name="help1">Welcome to \'Memo words\' application.</string>
+
+    <string name="help2">The app will help you learn words on different languages.</string>
+
+    <string name="help3">• Add words and its translations which are hard to remember.</string>
+
+    <string name="help4">• Add examples to understand context of word usage:</string>
+
+    <string name="help5">• Guess the words until you remember them:</string>
+
+    <string name="help6">Try next:</string>
+
+    <string name="help7">• Read a paragraph or listen to some speech on the language you learn. Add unfamiliar words.</string>
+
+    <string name="help71">• Adding words and examples of their usages by yourself will help you to remember and understand them fast.</string>
+
+    <string name="help8">• Learn the words by small portions (~100). After several repetitions, you should remember them automatically.</string>
+
+    <string name="help9">• Listen to or read the text with learned words again and check the result.</string>
+
+    <string name="help10">You can download some presets (dictionaries / notes), and create your own ones in Google spreadsheets:</string>
+
+    <string name="help11">Usually you can do 1 – 4 actions with the items on screens:</string>
+
+    <string name="help12">• Left swipe - delete</string>
+
+    <string name="help13">• Right swipe - send / share</string>
+
+    <string name="help14">• Tap - an action</string>
+
+    <string name="help15">• Long tap - editing</string>
+
+    <string name="help16">• <![CDATA[<a href="https://docs.google.com/document/d/1IuL5uwfLoiwOqf5L95tLCzZ9FUfrtFe_-FkmVQcrMYM">Terms of service</a>]]></string>
+
+    <string name="help17">• <![CDATA[<a href="https://docs.google.com/document/d/1Pc7OXrJ6GQOGh4Q3-hKOL4-YcY62rbMtBgVW7LK-AN8">Privacy policy</a>]]></string>
+
+    <!-- Languages -->
+    <string name="none">None</string>
+    <string name="korean">Korean</string>
+    <string name="marathi">Marathi</string>
+    <string name="russian">Russian</string>
+    <string name="armenian">Armenian</string>
+    <string name="georgian">Georgian</string>
+    <string name="traditional_chinese">Traditional Chinese</string>
+    <string name="hungarian">Hungarian</string>
+    <string name="thai">Thai</string>
+    <string name="urdu">Urdu</string>
+    <string name="norwegian">Norwegian</string>
+    <string name="danish">Danish</string>
+    <string name="turkish">Turkish</string>
+    <string name="estonian">Estonian</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="english">English</string>
+    <string name="swedish">Swedish</string>
+    <string name="bengali">Bengali</string>
+    <string name="gujarati">Gujarati</string>
+    <string name="kannada">Kannada</string>
+    <string name="greek">Greek</string>
+    <string name="hindi">Hindi</string>
+    <string name="finnish">Finnish</string>
+    <string name="khmer">Khmer</string>
+    <string name="french">French</string>
+    <string name="ukrainian">Ukrainian</string>
+    <string name="panjabi">Panjabi</string>
+    <string name="latvian">Latvian</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="malayalam">Malayalam</string>
+    <string name="german">German</string>
+    <string name="czech">Czech</string>
+    <string name="polish">Polish</string>
+    <string name="slovak">Slovak</string>
+    <string name="italian">Italian</string>
+    <string name="nepali">Nepali</string>
+    <string name="malay">Malay</string>
+    <string name="chinese">Chinese</string>
+    <string name="spanish">Spanish</string>
+    <string name="tamil">Tamil</string>
+    <string name="japanese">Japanese</string>
+    <string name="bulgarian">Bulgarian</string>
+    <string name="yue_chinese">Yue Chinese</string>
+    <string name="telugu">Telugu</string>
+    <string name="romanian">Romanian</string>
+    <string name="british_english">British English</string>
+    <string name="latin">Latin</string>
+    <string name="catalan">Catalan</string>
+    <string name="albanian">Albanian</string>
+    <string name="welsh">Welsh</string>
+    <string name="croatian">Croatian</string>
+    <string name="kurdish">Kurdish</string>
+    <string name="serbian">Serbian</string>
+    <string name="arabic">Arabic</string>
+    <string name="bosnian">Bosnian</string>
+    <string name="swahili">Swahili</string>
+    <string name="sinhala">Sinhala</string>
+
+
+    <!-- Policy -->
+    <string name="policy1">Last updated: October 04, 2022</string>
+    <string name="policy2">This Privacy Policy describes Our policies and procedures on the collection,
+        use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</string>
+    <string name="policy3">We use Your Personal data to provide and improve the Service. By using the Service,
+        You agree to the collection and use of information in accordance with this Privacy Policy. </string>
+
+    <string name="policy311">Interpretation and Definitions</string>
+    <string name="policy4">Interpretation</string>
+    <string name="policy5">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+</string>
+    <string name="policy6">Definitions</string>
+    <string name="policy7">For the purposes of this Privacy Policy:</string>
+    <string name="policy8">\t• <![CDATA[<b>Account</b>]]> means a unique account created for You to access our Service or parts of our Service.</string>
+    <string name="policy9">\t• <![CDATA[<b>Affiliate</b>]]> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+</string>
+    <string name="policy10">\t• <![CDATA[<b>Application</b>]]> means the software program provided by the Company downloaded by You on any electronic device, named Memo
+</string>
+    <string name="policy11">\t• <![CDATA[<b>Company</b>]]> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Memo.
+</string>
+    <string name="policy12">\t• <![CDATA[<b>Country</b>]]> refers to: Russia
+</string>
+    <string name="policy13">\t• <![CDATA[<b>Device</b>]]> means any device that can access the Service such as a computer, a cell phone or a digital tablet.</string>
+    <string name="policy14">\t• <![CDATA[<b>Personal Data</b>]]> is any information that relates to an identified or identifiable individual.</string>
+    <string name="policy15">\t• <![CDATA[<b>Service</b>]]> refers to the Application.
+</string>
+    <string name="policy16">\t• <![CDATA[<b>Service Provider</b>]]> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+</string>
+    <string name="policy17">\t• <![CDATA[<b>You</b>]]> - means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+</string>
+    <string name="policy18">\t• <![CDATA[<b>Google spreadsheets</b> - refers to <a href="https://www.google.com/sheets/about">Google spreadsheets</a>.]]></string>
+    <string name="policy19">Collecting and Using Your Personal Data</string>
+    <string name="policy20">Types of Data Collected</string>
+    <string name="policy21">Personal Data</string>
+    <string name="policy22">While using Our Service, We may ask You to provide Us with certain personally identifiable information that will be used to give you access to third party applications such as google spreadsheets. Personally identifiable information is limited to:</string>
+    <string name="policy23">\t• Google email address</string>
+    <string name="policy24">\t• Google account name</string>
+    <string name="policy25">Usage Data</string>
+    <string name="policy26"><![CDATA[Usage Data is not tracked and not collected by the app but it can be collected by a third party application if you use google spreadsheets service, see <a href="https://policies.google.com/privacy">google privacy policy</a> for details.]]></string>
+    <string name="policy27">Usage Data may include information such as Your Device\'s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</string>
+    <string name="policy28">Use of Your Personal Data</string>
+    <string name="policy29">The Company may use Personal Data for the following purposes:</string>
+    <string name="policy30"><![CDATA[<b>To manage Your Account:</b>]]> to manage Your registration as a user of the google spreadsheets service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</string>
+    <string name="policy31">We do not share and not collect Your personal information. The app uses your personal data only to give you access to google spreadsheets service if you need to.
+</string>
+    <string name="policy32">Transfer of Your Personal Data</string>
+    <string name="policy33">Your information, including Personal Data, is not processed at the Company\'s operating offices but may be processed in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ from those from Your jurisdiction.</string>
+    <string name="policy34">Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</string>
+    <string name="policy35">The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
+</string>
+    <string name="policy36">Security of Your Personal Data</string>
+    <string name="policy37">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</string>
+    <string name="policy38">Children\'s Privacy</string>
+    <string name="policy39"><![CDATA[Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.
+        If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us.
+        If you use google spreadsheet service in the application you need to check out <a href="https://policies.google.com/privacy">google privacy policy</a> for details.]]></string>
+    <string name="policy40">Links to Other Websites</string>
+    <string name="policy41">Our Service may contain links to other websites that are not operated by Us. If you click on a third party link, you will be directed to that third party\'s site. We strongly advise you to review the Privacy Policy of every site you visit.</string>
+    <string name="policy42">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</string>
+    <string name="policy43">Changes to this Privacy Policy</string>
+    <string name="policy44">We may update our Privacy Policy from time to time. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+</string>
+    <string name="policy45">Contact Us</string>
+    <string name="policy46">If you have any questions about this Privacy Policy, You can contact us:</string>
+    <string name="policy47">\t• By email: fxeipi@gmail.com</string>
+</resources>

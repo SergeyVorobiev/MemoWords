@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dictionaryGraph"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/bg_graph_dictionary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/todayScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/today_score"
+            android:textColor="#353535"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trainings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/trainings"
+            android:textColor="#353535"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/averageScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/average_per_sample"
+            android:textColor="#353535"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <com.vsv.graphs.DictionaryGraph
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginVertical="2dp"
+            custom:avgLine="true"
+            custom:avgLineColor="#80AE18E4"
+            custom:barColor="#0093E3"
+            custom:barThickness="0.8"
+            custom:maxBarsCount="200" />
+    </LinearLayout>
+</FrameLayout>

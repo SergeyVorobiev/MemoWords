@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_default"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/newSheetDialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sheet_dialog_new_header"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <EditText
+        android:id="@+id/newSheetNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:ems="10"
+        android:hint="@string/sheet_dialog_input_name_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:textColorHint="#78909C" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newSheetCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@drawable/btn_dialog_standard_cancel"
+            android:text="@string/dialog_cancel"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/newSheetOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@drawable/btn_dialog_standard_ok"
+            android:text="@string/dialog_ok"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>

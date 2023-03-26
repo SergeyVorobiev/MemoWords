@@ -1,0 +1,785 @@
+<resources>
+
+    <!-- General -->
+    <string name="def_dict_name">Словарь %s</string>
+    <string name="no_dict_to_move">Нет словарей для перемещения сэмпла</string>
+    <string name="app_header">Мемо</string>
+    <string name="notsheetservice">Не могу получить таблицы</string>
+    <string name="zero_number">0</string>
+    <string name="sign_in_failed">Ошибка входа: %s</string>
+    <string name="interrupt">Прервать</string>
+    <string name="seconds_remain">Подождите %.1f сек</string>
+    <string name="default_spreadsheet_name">📔 Таблицы</string>
+    <string name="counter">%d / %d</string>
+    <string name="set_the_language">Пожалуйста установите язык для словаря</string>
+    <string name="load_texture_error">Видео карта на вашем телефоне не поддерживает достаточное количество текстур</string>
+    <string name="load_gl_error">Видео карта на вашем телефоне не соответствует требованиям</string>
+    <string name="from">%d from %d</string>
+    <string name="time">%dm</string>
+    <string name="update">ОБНОВИТЬ</string>
+    <string name="default_notebook_name">Новый блокнот</string>
+    <string name="empty_counter">/ %d</string>
+    <string name="empty">Пусто</string>
+    <string name="shelves_item_name">полки</string>
+    <string name="dictionaries_item_name">словари</string>
+    <string name="notes_item_name">заметки</string>
+    <string name="notebooks_item_name">блокноты</string>
+    <string name="percentage">%d%%</string>
+    <string name="calculate">вычисляю…</string>
+    <string name="more_than">> %d</string>
+    <string name="too_fast">Слишком быстро</string>
+    <string name="left_right_percentage">%d%% / %d%%</string>
+    <string name="positive_percentage">%s + %.2f%%</string>
+    <string name="negative_percentage">%s - %.2f%%</string>
+    <string name="all_percentage">%.1f%%</string>
+    <string name="general_dialog_button_delete">УДАЛИТЬ</string>
+    <string name="general_dialog_button_merge">Соеденить</string>
+    <string name="general_dialog_button_cancel">Закрыть</string>
+    <string name="general_dialog_button_cancel2">Отмена</string>
+    <string name="add">Добавить</string>
+    <string name="share_file_name">memo</string>
+    <string name="share_file_name_dict">dictionary</string>
+    <string name="share_file_name_sheet">spreadsheet</string>
+    <string name="share_file_name_notebook">notebook</string>
+    <string name="new_dictionary">Новый словарь</string>
+    <string name="retry_button_label">Повторить</string>
+    <string name="only_from_start">Только сначала</string>
+    <string name="load_progress_message">Пожалуйста не изменяйте A2:A, B2:B, E2:E, F - области, если вы хотите чтобы прогресс загрузился обратно.
+Прогресс будет загружен только для - %s</string>
+
+    <!-- Ranks -->
+    <string name="rookie">🧑 Новичок</string>
+    <string name="beginner">🧑 Ученик</string>
+    <string name="seasoned">🧑 Бывалый</string>
+    <string name="adept">🧑 Адепт</string>
+    <string name="master">🧑 Мастер</string>
+    <string name="guru">🧑 Гуру</string>
+
+    <!-- fragment_debug.xml -->
+    <string name="no_crashes">Нет падений</string>
+    <string name="clear_crash">Очистить сообщение</string>
+
+    <!-- DebugFragment.java -->
+    <string name="debug_screen_header">Экран падений</string>
+
+    <!-- RecyclerDictionaryMergeAdapter.java -->
+    <string name="merge_dict_header">Вы хотите соеденить с \'%s\'?</string>
+
+    <!-- RecyclerDictionariesAdapter.java -->
+    <string name="spreadsheet_id_format">%s %s</string>
+
+    <!-- RecyclerSamplesAdapter.java -->
+    <string name="sample_train_empty">(никогда)</string>
+    <string name="sample_date_format">%s (%dd назад)</string>
+    <string name="sample_date_today_format">%s (сегодня)</string>
+
+    <!-- SampleRemover.java -->
+    <string name="delete_sample_header">Вы хотите удалить сэмпл?</string>
+
+    <!-- NoteRemover.java -->
+    <string name="delete_note_header">Вы хотите удалить \'%s\' заметку?</string>
+
+    <!-- AuthorPageDialog.java -->
+    <string name="author_dialog_header">Вы хотите открыть страницу автора?</string>
+    <string name="author_dialog_ok">Открыть</string>
+    <string name="author_dialog_cancel">Отмена</string>
+
+    <!-- ShelvesFragment.java -->
+    <string name="shelves_title">Полки</string>
+    <string name="shelf_example_name">Полка пример %s</string>
+    <string name="dictionary_example_name">Словарь пример %s</string>
+
+    <!-- menu_group.xml -->
+    <string name="account_button_description">Аккаунт</string>
+    <string name="more_button_description">Больше</string>
+    <string name="back_button_description">Назад</string>
+    <string name="search_description">Поиск</string>
+
+    <!-- dialog_new_notebook.xml -->
+    <string name="new_notebook_dialog_header">Новый блокнот</string>
+    <string name="notebook_dialog_input_name_hint">Имя блокнота</string>
+
+    <!-- dialog_help.xml -->
+    <string name="dialog_help_header">Помощь</string>
+
+    <!-- dialog_new_note.xml -->
+    <string name="new_note_dialog_header">Новая заметка</string>
+    <string name="note_dialog_input_header_hint">Заголовок</string>
+    <string name="note_dialog_input_number_hint">Номер главы (пусто - 0)</string>
+    <string name="note_dialog_input_content_hint">Содержимое</string>
+
+    <!-- dialog_update_notebook.xml -->
+    <string name="dialog_update_notebook_header">Обновить блокнот</string>
+    <string name="dialog_update_notebook_input_hint">Имя блокнота</string>
+
+    <!-- dialog_update_note.xml -->
+    <string name="dialog_update_note_header">Обновить заметку</string>
+
+    <!-- SamplesFragment.java -->
+    <string name="samples_title">Сэмплы</string>
+
+    <!-- RepetitionFragment.java -->
+    <string name="repetition_title">Репетиция</string>
+
+    <!-- EndTrainDialog.java -->
+    <string name="correct_answered">"%d из %d"</string>
+    <string name="score">🚀\u0020Очки за сегодня: %d (+%d)</string>
+    <string name="train_time">⌛\u0020Время: %s</string>
+
+    <!-- SheetsFragment.java -->
+    <string name="sheets">листы</string>
+    <string name="sheets_fragment_title">Листы</string>
+    <string name="login_to_see_sheets">Пожалуйста войдите через Google и обновите</string>
+
+    <!-- SpreadsheetsFragment.java -->
+    <string name="spreadsheets">таблицы</string>
+    <string name="spreadsheets_title">Таблицы</string>
+
+    <!-- item_sample.xml -->
+    <string name="sound_content_description_left">Левый звук</string>
+    <string name="sound_content_description_right">Правый звук</string>
+    <string name="translated_by">Переведено</string>
+    <string name="arrow_content_description">Стрела</string>
+
+    <!-- dialog_delete_spreadsheet.xml -->
+    <string name="delete_spreadsheet_button">УДАЛИТЬ</string>
+    <string name="dialog_delete_spreadsheet_header">Вы хотите удалить \'%s\' запись?</string>
+    <string name="dialog_delete_spreadsheet_note">Это действие удалит идентификатор таблицы из приложения</string>
+
+    <!-- dialog_new_sheet.xml -->
+    <string name="sheet_dialog_input_name_hint">Имя листа</string>
+    <string name="sheet_dialog_new_header">Новый лист</string>
+
+    <!-- dialog_new_sample.xml -->
+    <string name="swap_content_description">Переставить</string>
+    <string name="reset_progress">Сбросить прогресс</string>
+
+    <!-- dialog_sort_by.xml -->
+    <string name="sort_by_title">Сортировать по…</string>
+    <string name="sort_by_date">Сортировать по дате</string>
+    <string name="sort_by_kind">Сортировать по типу</string>
+    <string name="sort_by_left">Сортировать по левым значениям</string>
+    <string name="sort_by_right">Сортировать по правым значениям</string>
+
+    <!-- dialog_new_dictionary.xml -->
+    <string name="dictionary_dialog_input_name_hint">Имя словаря</string>
+    <string name="dictionary_dialog_load_from_spreadsheet">Загрузить из Google таблицы:</string>
+    <string name="dictionary_dialog_choose_languages">Выбрать языки:</string>
+    <string name="choose_left_language">Язык для левых значений</string>
+    <string name="choose_right_language">Язык для правый значений</string>
+    <string name="new_dictionary_dialog_retry">Повторить</string>
+    <string name="new_dictionary_dialog_please_login">Пожалуйста войдите через Google</string>
+    <string name="unfold_languages_content_description">Развернуть языки</string>
+    <string name="speakable_text_unfold_sheets">Развернуть листы</string>
+    <string name="speakable_left_language">Выбрать язык для левых значений</string>
+    <string name="speakable_right_language">Выбрать язык для правых значений</string>
+    <string name="bind_spreadsheet">Привязать таблицу</string>
+    <string name="load_progress">Загрузить прогресс</string>
+
+    <!-- dialog_update_dictionary.xml -->
+    <string name="dictionary_dialog_update_switch_label">Обновить из листа</string>
+    <string name="dictionary_dialog_delete_samples_checkbox">Удалить локальные сэмплы</string>
+    <string name="dictionary_update_examples_checkbox">Обновить примеры из листа</string>
+
+    <!-- dialog_update_sheet.xml -->
+    <string name="sheet_dialog_update_header">Переименовать лист</string>
+
+    <!-- dialog_delete_notebook.xml -->
+    <string name="delete_notebook_button">УДАЛИТЬ</string>
+    <string name="dialog_delete_notebook_header">Вы хотите удалить \'%s\' блокнот?</string>
+    <string name="dialog_delete_note_header">Вы хотите удалить \'%s\' заметку?</string>
+    <string name="dialog_delete_notebook_warning">Это действие удалит все заметки внутри</string>
+    <string name="dialog_delete_notebook_confirm">Подтвердить</string>
+    <string name="notebook_dialog_update_switch_label">Обновить из листа</string>
+    <string name="notebook_dialog_delete_samples_checkbox">Удалить локальные заметки</string>
+
+    <!-- dialog_delete_shelf.xml -->
+    <string name="delete_shelf_button">УДАЛИТЬ</string>
+    <string name="dialog_delete_shelf_header">Вы хотите удалить \'%s\' полку?</string>
+    <string name="dialog_delete_shelf_warning">Это действие удалит все словари и сэмплы внутри</string>
+    <string name="dialog_delete_shelf_confirm">Подтвердить</string>
+
+    <!-- dialog_delete_dictionary.xml -->
+    <string name="delete_dict_button">УДАЛИТЬ</string>
+    <string name="dialog_delete_dict_header">Вы хотите удалить \'%s\' словарь?</string>
+    <string name="dialog_delete_dict_warning">Это действие удалит все сэмплы внутри</string>
+    <string name="dialog_delete_dict_confirm">Подтвердить</string>
+
+    <!-- dialog_clear_samples.xml -->
+    <string name="clear_samples_warning">Очистите значения в выбранной колонке, выберите новый язык, отправьте словарь в таблицу чтобы выполнить автоматический перевод.</string>
+    <string name="clear_left_values">Очистить левые значения</string>
+    <string name="clear_right_values">Очистить правые значения</string>
+    <string name="clear_button">Очистить</string>
+    <string name="clear_examples">Очистить примеры</string>
+    <string name="clear_kinds">Очистить типы</string>
+
+    <!-- dialog_delete_sheet.xml -->
+    <string name="delete_tab_button">УДАЛИТЬ</string>
+    <string name="dialog_delete_tab_header">Вы хотите удалить \'%s\' лист?</string>
+    <string name="dialog_delete_tab_warning">Это действие удалит лист на стороне сервера</string>
+    <string name="dialog_delete_tab_confirm">Подтвердить</string>
+
+    <!-- dialog_new_spreadsheet.xml -->
+    <string name="spreadsheet_dialog_new_header">Новая таблица</string>
+    <string name="spreadsheet_dialog_get_name">Получить имя с сервера</string>
+    <string name="spreadsheet_dialog_update_header">Обновить таблицу</string>
+    <string name="spreadsheet_dialog_input_name_hint">Имя таблицы (произвольно)</string>
+    <string name="spreadsheet_dialog_input_id_hint">Идентификатор таблицы (существующий)</string>
+    <string name="spreadsheet_dialog_icon_content_description">Значок таблицы</string>
+    <string name="speakable_type">Выберите тип</string>
+
+    <!-- NewSpreadsheetDialog.java -->
+    <string name="spreadsheet_type0">Любой</string>
+    <string name="spreadsheet_type1">Словари</string>
+    <string name="spreadsheet_type2">Блокноты</string>
+
+    <!-- item_move_to_dictionary.xml -->
+    <string name="dict_icon_checker_content_description">Галочка выбора словаря</string>
+
+    <!-- item_spreadsheet.xml -->
+    <string name="copy_spreadsheet_content_description">Скопировать идентификатор таблицы</string>
+    <string name="icon_spreadsheet_content_description">Значок таблицы</string>
+
+    <!-- item_ss_preset.xml -->
+    <string name="preset_ss_content_description">Значок пресетов</string>
+    <string name="preset_header">Нажмите чтобы добавить</string>
+    <string name="preset_wait_header">Пожалуйста подождите</string>
+    <string name="preset_error_header">Ошибка</string>
+
+    <!-- dialog_language.xml -->
+    <string name="dialog_language_header">Язык приложения</string>
+    <string name="dialog_change_button">Изменить</string>
+
+    <!-- dialog_spreadsheet_send.xml -->
+    <string name="share_content_description">Поделиться</string>
+    <string name="copy_content_description">Копировать</string>
+    <string name="ss_copy">Копировать</string>
+    <string name="ss_share">Поделиться</string>
+
+    <!-- item_chosen_sheet.xml -->
+    <string name="sheet_cancel_button_description">Кнопка закрытия листа</string>
+
+    <!-- item_choosen_spreadsheet.xml -->
+    <string name="spreadsheet_cancel_button_description">Кнопка закрытия таблицы</string>
+    <string name="spreadsheet_icon_description">Значок таблицы</string>
+
+    <!-- item_help.xml -->
+    <string name="image_help_description">Картинка помощи</string>
+
+    <!-- item_shelf.xml -->
+    <string name="shelf_icon_content_description">Значок полки</string>
+    <string name="shelf_label">Полка</string>
+
+    <!-- item_notebook.xml -->
+    <string name="notebook_icon_content_description">Значок блокнота</string>
+    <string name="notebook_label">Блокнот</string>
+    <string name="notebook_author_content_description">Автор блокнота</string>
+
+    <!-- item_graph.xml -->
+    <string name="today_score">🚀\u0020Очки за сегодня: %d</string>
+    <string name="reaction_speed">🔎\u0020Скорость воспоминания: %.2f сек</string>
+    <string name="average_per_sample">✨\u0020Среднее на сэмпл: %d</string>
+    <string name="trainings">✨\u0020Тренировки: %d</string>
+
+    <!-- item_dictionary.xml -->
+    <string name="dict_icon_content_description">Значок словаря</string>
+    <string name="dict_rate_content_description">Рейтинг словаря</string>
+    <string name="dict_graph_content_description">Чертёж словаря</string>
+    <string name="dict_author_content_description">Автор блокнота</string>
+    <string name="dict_label">Словарь</string>
+
+    <!-- fragment_sheets.xml -->
+    <string name="add_sheet_content_description">Добавить лист</string>
+
+    <!-- fragment_samples.xml -->
+    <string name="content_description_train">Тренировка</string>
+    <string name="content_description_swap">Переставить сэмплы</string>
+    <string name="content_description_sample_add">Добавить сэмпл</string>
+
+    <!-- fragment_spreadsheets.xml -->
+    <string name="add_spreadsheet_content_description">Добавить таблицу</string>
+
+    <!-- fragment_dictionaries.xml -->
+    <string name="add_dictionaries_content_description">Добавить словарь</string>
+
+    <!-- fragment_notebooks.xml -->
+    <string name="add_notebooks_content_description">Добавить блокнот</string>
+    <string name="notebook_label_counter">Блокноты</string>
+
+    <!-- fragment_notes.xml -->
+    <string name="add_notes_content_description">Добавить заметку</string>
+
+    <!-- dictionary_find_word.xml -->
+    <string name="dictionary_find_dialog_header">Найти сэмпл</string>
+
+    <!-- DictionariesFragment.java -->
+    <string name="move_title">Переместить в</string>
+    <string name="copy_title">Копировать в</string>
+    <string name="add_title">Добавить в</string>
+    <string name="dict_fragment_title">Словари</string>
+
+    <!-- DictionaryMergeFragment.java -->
+    <string name="dict_merge_fragment_title">Добавить к</string>
+
+    <!-- NotebooksFragment.java -->
+    <string name="notebooks_title">Блокноты</string>
+
+    <!-- NotesFragment.java -->
+    <string name="notes_title">Заметки</string>
+
+    <!-- RecyclerLanguageAdapter.java -->
+    <string name="default_language">По умолчанию</string>
+    <string name="english_language">Английский</string>
+    <string name="russian_language">Русский</string>
+
+    <!-- dialog_sign_out.xml -->
+    <string name="sign_out_dialog_header">Аккаунт</string>
+    <string name="sign_in_button_label">Войти через Google</string>
+    <string name="sign_out_button_label">Выйти</string>
+    <string name="sign_out_dialog_auto_logout">Авто-логаут при закрытии приложения</string>
+    <string name="sign_out_dialog_mobile_internet">Позволить мобильный интернет</string>
+    <string name="account_image_content_description">Значок аккаунта</string>
+    <string name="privacy_policy_text">политика конфиденциальности</string>
+    <string name="privacy_policy_header">Политика конфиденциальности</string>
+    <string name="privacy_policy_close_button_description">Закрыть политику конфиденциальности</string>
+    <string name="remember_bar_description">Бар запоминания</string>
+    <string name="score_account">Очков сегодня:</string>
+    <string name="all_score_account">Всего:</string>
+    <string name="all_train_account">Время тренировок:</string>
+
+    <!-- SignOutDialog.java -->
+    <string name="dict_count_label">📚 Словари:</string>
+    <string name="samples_count_label">🧩 Сэмплы:</string>
+    <string name="notes_count_label">📄 Заметки:</string>
+
+    <!-- SendSampleDialog.java -->
+    <string name="send_sample_dialog_header">Переместить сэмпл в</string>
+
+    <!-- dialog_start_train.xml -->
+    <string name="start_mode_header">Режим:</string>
+    <string name="start_mode_game">Игра</string>
+    <string name="start_mode_repetition">Репетиция</string>
+    <string name="start_mode_guess">Отгадай по слову</string>
+    <string name="start_mode_sound">Отгадай по звуку</string>
+    <string name="start_mode_type_normal">Нормальный</string>
+    <string name="start_mode_type_hard">Сложный</string>
+    <string name="start_mode_sentence_type_normal">Нормальный</string>
+    <string name="start_mode_sentence_type_hard">Обратный</string>
+    <string name="start_mode_sentence">Отгадай в предложении</string>
+    <string name="train_dialog_header">Стартовые опции</string>
+    <string name="enunciate_words">Произносить слова</string>
+    <string name="exclude_correctly_answered">Исключить запомненные</string>
+    <string name="only_wrong_answered">Только неверные</string>
+    <string name="start_words_percentage">100% слов</string>
+    <string name="start_words_percentage_adjust">%d%% слов (%d)</string>
+    <string name="start_train_button">Начать</string>
+
+    <!-- TrainFragment.java -->
+    <string name="train_percentage">%.1f%%</string>
+    <string name="train_title">Тренировка</string>
+
+    <!-- GameFragment.java -->
+    <string name="game_title">Игра</string>
+
+
+    <!-- fragment_train.xml -->
+    <string name="speech_content_description">Разговор</string>
+    <string name="answer0_description">Ответ 1</string>
+    <string name="answer1_description">Ответ 2</string>
+    <string name="answer2_description">Ответ 3</string>
+    <string name="answer3_description">Ответ 4</string>
+
+    <!-- fragment_repetition.xml -->
+    <string name="repetition_replay">Повторить</string>
+
+    <!-- dialog_new_shelf.xml -->
+    <string name="new_shelf_name_hint">Имя полки</string>
+    <string name="new_shelf_dialog_icon_content_description">Значок полки</string>
+    <string name="new_shelf_dialog_header">Новая полка</string>
+    <string name="load_progress_shelf">Загрузить прогресс</string>
+    <string name="new_shelf_name_default">Полка %s</string>
+
+    <!-- dialog_send_shelf.xml -->
+    <string name="send_shelf">Сохранить полку в Google таблицу</string>
+    <string name="send_shelf_warning">Данные будут заменены в существующих листах с совпадающими именами</string>
+
+    <!-- dialog_send_dictionary.xml -->
+    <string name="send_dictionary_header">Словарь</string>
+    <string name="send_dictionary_radio_bind">Привязать Google таблицу</string>
+    <string name="send_dictionary_radio_merge">Добавить</string>
+    <string name="send_dictionary_radio_move">Переместить</string>
+    <string name="send_dictionary_radio_copy">Копировать</string>
+    <string name="send_dictionary_radio_copy_to_sheet">Отправить</string>
+    <string name="send_dictionary_radio_share">Поделиться</string>
+    <string name="save_progress">Сохранить прогресс</string>
+    <string name="send_dictionary_radio_share_spreadsheet">Поделиться Google таблицей</string>
+    <string name="choose_sheet_label">Выбрать лист:</string>
+    <string name="choose_spreadsheet_label">Выбрать Google таблицу:</string>
+    <string name="replace_data_warning">Существующие данные будут заменены в A:N области</string>
+    <string name="content_description_cancel_send_sheet">Закрыть отправку листа</string>
+
+    <!-- dialog_send_notebook.xml -->
+    <string name="send_notebook_header">Блокнот</string>
+    <string name="send_notebook_radio_copy">Копировать</string>
+    <string name="send_notebook_radio_copy_to_sheet">Отправить в Google таблицу</string>
+    <string name="send_notebook_radio_share">Поделиться</string>
+    <string name="send_notebook_radio_share_spreadsheet">Поделиться Google таблицей</string>
+    <string name="choose_sheet_notebook_label">Выбрать лист:</string>
+    <string name="replace_notebook_data_warning">Существующие данные будут заменены в A:H области</string>
+    <string name="content_notebook_description_cancel_send_sheet">Закрыть отправку листа</string>
+
+    <!-- SendDictionaryDialog.java -->
+    <string name="send_dictionary_radio_copy_to_sheet_login">Отправить в Google таблицу (вход)</string>
+    <string name="send_dictionary_radio_copy_to_bind_login">Привязать Google таблицу (вход)</string>
+
+    <!-- SendNotebookDialog.java -->
+    <string name="send_notebook_radio_copy_to_sheet_login">Отправить в Google таблицу (вход)</string>
+
+    <!-- dialog_add_dictionary.xml -->
+    <string name="dialog_add_dictionary_header">Добавить словарь</string>
+    <string name="dialog_add_name_hint">Имя</string>
+    <string name="dialog_add_notebook_header">Добавить блокнот</string>
+    <string name="dialog_add_spreadsheet_header">Добавить таблицу</string>
+
+    <!-- dialog_find_word.xml -->
+    <string name="search_result_label">Поиск:</string>
+
+    <string name="app_name">Мемо</string>
+
+    <!-- dialog_save_load_spreadsheets.xml -->
+    <string name="save_load_spreadsheet_header">Сохранить / Загрузить ид Google таблиц</string>
+    <string name="save_spreadsheet_into">Сохранить ид Google таблиц в:</string>
+    <string name="load_spreadsheet_from">Загрузить ид Google таблиц из:</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="shelves_fragment_label">Shelves Fragment</string>
+    <string name="move_or_copy_label">Move or Copy Fragment</string>
+    <string name="spreadsheets_fragment_label">Spreadsheet Fragment</string>
+    <string name="debug_fragment_header">Debug Fragment</string>
+    <string name="sheets_fragment_label">Sheets Fragment</string>
+    <string name="notebooks_fragment_label">Notebooks Fragment</string>
+    <string name="notes_fragment_label">Notes Fragment</string>
+    <string name="dictionaries_fragment_label">Dictionaries Fragment</string>
+    <string name="dictionary_merge_fragment_label">Dictionary Merge Fragment</string>
+    <string name="samples_fragment_label">Samples Fragment</string>
+    <string name="train_fragment_label">Train Fragment</string>
+    <string name="game_fragment_label">Game Fragment</string>
+    <string name="repetition_fragment_label">Repetition Fragment</string>
+
+    <string name="new_dictionary_dialog_header">Новый словарь</string>
+    <string name="update_dictionary_dialog_header">Обновить словарь</string>
+    <string name="update_sample_dialog_header">Обновить сэмпл</string>
+    <string name="update_shelf_dialog_header">Переименовать полку</string>
+    <string name="chooser_left_language_description">Левый язык</string>
+    <string name="chooser_right_language_description">Правый язык</string>
+    <string name="new_sample_dialog_header">Новый сэмпл</string>
+
+    <string name="action_search">Поиск…</string>
+    <string name="action_sort_by">🔤\u0020\u0020\u0020\u0020Сортировать…</string>
+    <string name="action_sort_by_name">🔤\u0020\u0020\u0020\u0020Сортировать по имени</string>
+    <string name="action_sort_by_date">🔤\u0020\u0020\u0020\u0020Сортировать по дате</string>
+    <string name="action_spreadsheet_help">❔\u0020\u0020\u0020\u0020Помощь</string>
+    <string name="action_help">❔\u0020\u0020\u0020\u0020Помощь</string>
+    <string name="action_language">👅\u0020\u0020\u0020\u0020Язык приложения</string>
+    <string name="action_spreadsheet_presets">🗂️\u0020\u0020\u0020\u0020Пресеты</string>
+    <string name="action_spreadsheet_save_load">🗃️\u0020\u0020\u0020\u0020Сохранить / Загрузить</string>
+    <string name="action_sort_origin">🔤\u0020\u0020\u0020\u0020Сортировать из источника</string>
+    <string name="action_spreadsheets">🗃️\u0020\u0020\u0020\u0020Google Таблицы</string>
+    <string name="action_find_word">🔎\u0020\u0020\u0020\u0020Найти…</string>
+    <string name="action_clear_samples">🧹\u0020\u0020\u0020\u0020Очистить переводы</string>
+    <string name="action_notebooks">📔\u0020\u0020\u0020\u0020Блокноты</string>
+    <string name="action_sign_in">Аккаунт</string>
+    <string name="action_hide_remembered">📥\u0020\u0020\u0020\u0020Скрыть запомненные</string>
+    <string name="action_show_remembered">📤\u0020\u0020\u0020\u0020Показать запомненные</string>
+
+    <string name="dialog_cancel">Закрыть</string>
+    <string name="dialog_ok">ОК</string>
+    <string name="sample_example_label">Примеры:</string>
+    <string name="image_example_label">Картинка:</string>
+
+    <!-- Sheet error messages. -->
+    <string name="no_internet">Пожалуйста проверьте интернет соединение</string>
+    <string name="spreadsheet_id_not_exist">Таблица с таким идентификатором не существует</string>
+    <string name="no_permission">У вас нет прав</string>
+    <string name="timeout">Время вышло</string>
+    <string name="slow_connection">Медленное интернет соединение, пожалуйста попробуйте позже</string>
+    <string name="unexpected_error">Неожиданная ошибка</string>
+    <string name="no_sheet">Таблица не имеет листов</string>
+
+    <!-- dialog_end_train.xml -->
+    <string name="results_header">Результат</string>
+    <string name="average_score">Очков на сэмпл: %d</string>
+
+    <!-- Hints -->
+    <string name="sample_dialog_kind_hint">Тип (необязательно)</string>
+    <string name="sample_dialog_example_hint">Примеры (необязательно)</string>
+    <string name="sample_dialog_left_value_hint">Левое значение</string>
+    <string name="sample_dialog_right_value_hint">Правое значение</string>
+
+    <!-- Toasts -->
+    <string name="toast_shelf_has_no_name">Полка не имеет имени</string>
+    <string name="toast_item_cannot_be_edited">Этот элемент не может быть отредактирован</string>
+    <string name="toast_dictionary_has_no_name">Словарь не имеет имени</string>
+    <string name="toast_empty_sample">Значение сэмпла не может быть пустым</string>
+    <string name="toast_not_enough_samples">Количество сэмплов не может быть меньше чем %d</string>
+    <string name="toast_sheet_not_exist">Лист \'%s\' не существует</string>
+    <string name="toast_connect_to_spreadsheet">Не могу подключиться к таблице, пожалуйста проверьте интернет соединение</string>
+    <string name="toast_no_connection">Что-то пошло не так, пожалуйста проверьте интернет соединение</string>
+    <string name="toast_maximum_items">Вы имеете максимальное количество (%s)</string>
+    <string name="toast_choose_action">Пожалуйста выберите действие</string>
+    <string name="toast_choose_spreadsheet">Пожалуйста выберите таблицу</string>
+    <string name="toast_choose_sheet">Пожалуйста выберите лист</string>
+    <string name="toast_cannot_copy_dictionary">Не могу скопировать таблицу</string>
+    <string name="toast_sheet_is_not_specified">Имя листа не установлено</string>
+    <string name="toast_spreadsheet_is_not_specified">Таблица не установлена</string>
+    <string name="toast_broken_file">Не могу прочитать повреждённый файл</string>
+    <string name="toast_cannot_open_file">Не могу открыть файл</string>
+    <string name="toast_wrong_reading_dictionary">Что то пошло не так во время чтения словаря с именем \'%s\'</string>
+    <string name="toast_name_empty">Имя не может быть пустым</string>
+    <string name="toast_notebook_name_empty">Блокнот не имеет имени</string>
+    <string name="toast_note_content_empty">Заметка не имеет содержимого</string>
+    <string name="toast_note_header_empty">Заметка не имеет заголовка</string>
+    <string name="toast_nothing_to_add">Файл пустой</string>
+    <string name="toast_nothing_to_save">Нечего сохранять</string>
+    <string name="toast_nothing_to_load">Нечего загружать</string>
+    <string name="toast_cannot_add_dictionary">Не могу добавить словарь</string>
+    <string name="toast_cannot_get_dictionaries">Не могу получить словари</string>
+    <string name="toast_cannot_add_shelf">Не могу добавить полку</string>
+    <string name="toast_cannot_add_spreadsheet">Не могу добавить таблицу</string>
+    <string name="toast_cannot_open_link">Не могу открыть ссылку</string>
+    <string name="toast_language_not_specified">Язык не установлен</string>
+    <string name="toast_cannot_send_dictionary">Не могу отправить словарь</string>
+    <string name="toast_cannot_merge_dictionary">Не могу добавить словарь</string>
+    <string name="toast_cannot_share_dictionary">Не могу поделиться словарём</string>
+    <string name="toast_cannot_share_notebook">Не могу поделиться блокнотом</string>
+    <string name="toast_cannot_share_spreadsheet">Не могу поделиться таблицей</string>
+    <string name="toast_cannot_move_dictionary">Не могу переместить словарь</string>
+    <string name="toast_try_latter">Что то пошло не так, попробуйте позже</string>
+    <string name="toast_slow_internet">Медленный интернет, время вышло</string>
+    <string name="toast_success">Успех</string>
+    <string name="toast_not_all_samples_added">Не все сэмплы были добавлены</string>
+    <string name="toast_cannot_load_settings">Не могу загрузить установки</string>
+    <string name="toast_copied">Скопировано</string>
+    <string name="toast_spreadsheet_name_empty">Таблица не имеет имени</string>
+    <string name="toast_spreadsheet_id_empty">Таблица не имеет идентификатора</string>
+    <string name="toast_sheet_name_empty">Лист не имеет имени</string>
+    <string name="toast_spreadsheet_exists">Таблица с таким идентификатором существует</string>
+    <string name="toast_please_login">Пожалуйста войдите через Google</string>
+    <string name="toast_read_from_dictionary_error">Что то пошло не так при попытке прочесть словарь \'%s\'.</string>
+    <string name="toast_read_from_notebook_error">Что то пошло не так при попытке прочесть блокнот \'%s\'.</string>
+    <string name="toast_please_choose_column">Пожалуйста выберите колонку</string>
+    <string name="toast_no_presets">Нет пресетов для загрузки, попробуйте позже</string>
+
+    <!-- Spreadsheet help -->
+    <string name="spreadsheet_help">
+        • Чтобы использовать Google таблицы вам нужно войти в аккаунт.
+        Приложение не может создавать или удалять Google таблицы, но
+        вы можете работать с существующими Google таблицами. Приложение не содержит инструментов для извлечения, передачи и анализа данных из ваших
+        Google таблиц. Ваши данные сохраняются только на вашем устройстве для отображения, но вы можете делиться сохраненными локально данными самостоятельно, ознакомьтесь с нашей <![CDATA[<a href="https://docs.google.com/document/d/1Pc7OXrJ6GQOGh4Q3-hKOL4-YcY62rbMtBgVW7LK-AN8">политикой конфиденциальности</a>]]>.
+    </string>
+    <string name="spreadsheet_help1_0">• Вы можете использовать Google таблицы для создания и управления вашими заметками и словарями, выполнять автопереводы или сохранять словари, прогресс и заметки из устройства.</string>
+
+    <string name="spreadsheet_help1_1">
+        • Google таблицы которые не принадлежат вашему аккаунту должны иметь публичный доступ чтобы использовать их.
+    </string>
+    <string name="spreadsheet_help1_2">
+        • Вы можете добавлять / удалять / переименовывать листы в Google таблицах если они принадлежат вашему аккаунту или если вы имеете права на их редактирование.
+    </string>
+    <string name="spreadsheet_help2">• Чтобы добавить Google таблицу в приложение вам нужен её идентификатор. Вы можете получить идентификатор из строки браузера:</string>
+
+    <string name="spreadsheet_help3">• Лист может содержать заголовок:</string>
+
+    <string name="spreadsheet_help4">
+        • A1: mdict / mnote / mcnote - кодовые слова объявляющие тип - словарь / блокнот / блокнот без возможности копирования.
+    </string>
+    <string name="spreadsheet_help5">
+        • B1: Имя словаря / блокнота.
+    </string>
+    <string name="spreadsheet_help6">
+        • C1: Язык левого сэмпла. Используется для произношения и автоперевода, может быть пустым.
+    </string>
+
+    <string name="spreadsheet_help7">
+        • D1: Язык правого сэмпла. Используется для произношения и автоперевода, может быть пустым.
+    </string>
+
+    <string name="spreadsheet_help8">
+        • E1: Время последнего обновления. Может быть пустым. Ячейка с типом дата \'Lotus123\' или unix timestamp в секундах.
+    </string>
+
+    <string name="spreadsheet_help9">• Вы можете использовать формулу - =GOOGLETRANSLATE(,,,) в ячейках Google таблицы для выполнения авто перевода или очистите
+    нужную колонку вашего словаря, выбирете новый язык и отправьте словарь в Google таблицу для выполнения автоперевода:</string>
+
+    <string name="spreadsheet_help10">
+        • F1: Имя автора в социальной сети. Может быть пустым. Одно из:
+        \n\n•• Twitch: t:yourAccountName
+        \n\n•• Youtube: y:yourAccountId
+        \n\n•• Facebook: f:yourAccountName
+        \n\n•• Instagram: i:yourAccountName
+    </string>
+
+
+    <!-- Help -->
+    <string name="help1">Добро пожаловать в \'Memo words\' приложение.</string>
+
+    <string name="help2">Приложение поможет вам самостоятельно изучать слова на разных языках.</string>
+
+    <string name="help3">• Добавляйте слова и их переводы которые вам трудно запомнить.</string>
+
+    <string name="help4">• Добавляйте к словам примеры предложений, чтобы быстрее запомнить контекст их применения:</string>
+
+    <string name="help5">• Отгадывайте слова пока не запомните их:</string>
+
+    <string name="help6">Попробуйте следующее:</string>
+
+    <string name="help7">• Прочтите абзац из книги или прослушайте отрывок речи на языке который вы изучаете, добавьте в словарь незнакомые вам слова.</string>
+
+    <string name="help71">• Добавляя слова и примеры их использования вручную, вы быстрее запомните контексты их применения.</string>
+
+    <string name="help8">• Изучайте слова порционно (~100), при многократном повторении слова запомнятся сами собой.</string>
+
+    <string name="help9">• Прослушайте или прочтите отрывок из которого вы взяли выученные слова и проверьте результат.</string>
+
+    <string name="help10">Вы можете загрузить предустановленные словари и заметки, создавать свои собственные, а также выполнять автоперевод в google spreadsheets:</string>
+
+    <string name="help11">С элементами на экране можно выполнять 1 – 4 действий:</string>
+
+    <string name="help12">• Левый свайп - удалить</string>
+
+    <string name="help13">• Правый свайп - отправить</string>
+
+    <string name="help14">• Тап - действие</string>
+
+    <string name="help15">• Долгий тап - редактирование</string>
+
+    <string name="help16">• <![CDATA[<a href="https://docs.google.com/document/d/1IuL5uwfLoiwOqf5L95tLCzZ9FUfrtFe_-FkmVQcrMYM">Условия использования</a>]]></string>
+
+    <string name="help17">• <![CDATA[<a href="https://docs.google.com/document/d/1Pc7OXrJ6GQOGh4Q3-hKOL4-YcY62rbMtBgVW7LK-AN8">Политика конфиденциальности</a>]]></string>
+
+    <!-- Languages -->
+    <string name="none">Нет</string>
+    <string name="korean">Корейский</string>
+    <string name="marathi">Маратхи</string>
+    <string name="russian">Русский</string>
+    <string name="armenian">Армянский</string>
+    <string name="georgian">Грузинский</string>
+    <string name="traditional_chinese">Традиционный китайский</string>
+    <string name="hungarian">Венгерский</string>
+    <string name="thai">Тайский</string>
+    <string name="urdu">Урду</string>
+    <string name="norwegian">Норвежский</string>
+    <string name="danish">Датский</string>
+    <string name="turkish">Турецкий</string>
+    <string name="estonian">Эстонский</string>
+    <string name="portuguese">Португальский</string>
+    <string name="vietnamese">Вьетнамский</string>
+    <string name="english">Английский</string>
+    <string name="swedish">Шведский</string>
+    <string name="bengali">Бенгальский</string>
+    <string name="gujarati">Гуджарати</string>
+    <string name="kannada">Каннада</string>
+    <string name="greek">Греческий</string>
+    <string name="hindi">Хинди</string>
+    <string name="finnish">Финский</string>
+    <string name="khmer">Кхмерский</string>
+    <string name="french">Французский</string>
+    <string name="ukrainian">Украинский</string>
+    <string name="panjabi">Панджаби</string>
+    <string name="latvian">Латышский</string>
+    <string name="netherlands">Голандский</string>
+    <string name="malayalam">Малаялам</string>
+    <string name="german">Германский</string>
+    <string name="czech">Чешский</string>
+    <string name="polish">Польский</string>
+    <string name="slovak">Словацкий</string>
+    <string name="italian">Итальянский</string>
+    <string name="nepali">Непальский</string>
+    <string name="malay">Малазийский</string>
+    <string name="chinese">Китайский</string>
+    <string name="spanish">Испанский</string>
+    <string name="tamil">Тамильский</string>
+    <string name="japanese">Японский</string>
+    <string name="bulgarian">Болгарский</string>
+    <string name="yue_chinese">Кантонский китайский</string>
+    <string name="telugu">Телегу</string>
+    <string name="romanian">Румынский</string>
+    <string name="british_english">Британский английский</string>
+    <string name="latin">Латинский</string>
+    <string name="catalan">Каталонский</string>
+    <string name="albanian">Албанский</string>
+    <string name="welsh">Валлийский</string>
+    <string name="croatian">Хорватский</string>
+    <string name="kurdish">Курдский</string>
+    <string name="serbian">Сербский</string>
+    <string name="arabic">Арабский</string>
+    <string name="bosnian">Боснийский</string>
+    <string name="swahili">Суахили</string>
+    <string name="sinhala">Сингальский</string>
+
+
+    <!-- Policy -->
+    <string name="policy1">Last updated: October 04, 2022</string>
+    <string name="policy2">This Privacy Policy describes Our policies and procedures on the collection,
+        use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</string>
+    <string name="policy3">We use Your Personal data to provide and improve the Service. By using the Service,
+        You agree to the collection and use of information in accordance with this Privacy Policy. </string>
+
+    <string name="policy311">Interpretation and Definitions</string>
+    <string name="policy4">Interpretation</string>
+    <string name="policy5">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+</string>
+    <string name="policy6">Definitions</string>
+    <string name="policy7">For the purposes of this Privacy Policy:</string>
+    <string name="policy8">\t• <![CDATA[<b>Account</b>]]> means a unique account created for You to access our Service or parts of our Service.</string>
+    <string name="policy9">\t• <![CDATA[<b>Affiliate</b>]]> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+</string>
+    <string name="policy10">\t• <![CDATA[<b>Application</b>]]> means the software program provided by the Company downloaded by You on any electronic device, named Memo
+</string>
+    <string name="policy11">\t• <![CDATA[<b>Company</b>]]> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Memo.
+</string>
+    <string name="policy12">\t• <![CDATA[<b>Country</b>]]> refers to: Russia
+</string>
+    <string name="policy13">\t• <![CDATA[<b>Device</b>]]> means any device that can access the Service such as a computer, a cell phone or a digital tablet.</string>
+    <string name="policy14">\t• <![CDATA[<b>Personal Data</b>]]> is any information that relates to an identified or identifiable individual.</string>
+    <string name="policy15">\t• <![CDATA[<b>Service</b>]]> refers to the Application.
+</string>
+    <string name="policy16">\t• <![CDATA[<b>Service Provider</b>]]> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+</string>
+    <string name="policy17">\t• <![CDATA[<b>You</b>]]> - means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+</string>
+    <string name="policy18">\t• <![CDATA[<b>Google spreadsheets</b> - refers to <a href="https://www.google.com/sheets/about">Google spreadsheets</a>.]]></string>
+    <string name="policy19">Collecting and Using Your Personal Data</string>
+    <string name="policy20">Types of Data Collected</string>
+    <string name="policy21">Personal Data</string>
+    <string name="policy22">While using Our Service, We may ask You to provide Us with certain personally identifiable information that will be used to give you access to third party applications such as google spreadsheets. Personally identifiable information is limited to:</string>
+    <string name="policy23">\t• Google email address</string>
+    <string name="policy24">\t• Google account name</string>
+    <string name="policy25">Usage Data</string>
+    <string name="policy26"><![CDATA[Usage Data is not tracked and not collected by the app but it can be collected by a third party application if you use google spreadsheets service, see <a href="https://policies.google.com/privacy">google privacy policy</a> for details.]]></string>
+    <string name="policy27">Usage Data may include information such as Your Device\'s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</string>
+    <string name="policy28">Use of Your Personal Data</string>
+    <string name="policy29">The Company may use Personal Data for the following purposes:</string>
+    <string name="policy30"><![CDATA[<b>To manage Your Account:</b>]]> to manage Your registration as a user of the google spreadsheets service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</string>
+    <string name="policy31">We do not share and not collect Your personal information. The app uses your personal data only to give you access to google spreadsheets service if you need to.
+</string>
+    <string name="policy32">Transfer of Your Personal Data</string>
+    <string name="policy33">Your information, including Personal Data, is not processed at the Company\'s operating offices but may be processed in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ from those from Your jurisdiction.</string>
+    <string name="policy34">Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</string>
+    <string name="policy35">The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
+</string>
+    <string name="policy36">Security of Your Personal Data</string>
+    <string name="policy37">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</string>
+    <string name="policy38">Children\'s Privacy</string>
+    <string name="policy39"><![CDATA[Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.
+        If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us.
+        If you use google spreadsheet service in the application you need to check out <a href="https://policies.google.com/privacy">google privacy policy</a> for details.]]></string>
+    <string name="policy40">Links to Other Websites</string>
+    <string name="policy41">Our Service may contain links to other websites that are not operated by Us. If you click on a third party link, you will be directed to that third party\'s site. We strongly advise you to review the Privacy Policy of every site you visit.</string>
+    <string name="policy42">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</string>
+    <string name="policy43">Changes to this Privacy Policy</string>
+    <string name="policy44">We may update our Privacy Policy from time to time. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+</string>
+    <string name="policy45">Contact Us</string>
+    <string name="policy46">If you have any questions about this Privacy Policy, You can contact us:</string>
+    <string name="policy47">\t• By email: fxeipi@gmail.com</string>
+</resources>

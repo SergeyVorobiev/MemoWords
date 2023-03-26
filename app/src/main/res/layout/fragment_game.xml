@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:keepScreenOn="true"
+    tools:context=".fragments.GameFragment">
+
+    <com.vsv.game.engine.screens.ShootGameGLScreen
+        android:id="@+id/gameGLScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/controlPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.vsv.game.engine.screens.ShootGameScreen
+        android:id="@+id/gameScreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="300dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/controlPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#003A6C"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/bg_control_panel"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:paddingHorizontal="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#0BA600"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,TextContrastCheck"
+                    tools:text="0" />
+
+                <TextView
+                    android:id="@+id/counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="1dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp"
+                    tools:text="1 from 100" />
+
+                <TextView
+                    android:id="@+id/wrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:paddingHorizontal="5dp"
+                    android:textAlignment="center"
+                    android:textColor="#C60000"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,TextContrastCheck"
+                    tools:text="0" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/questionProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="1dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/time_sample_progress_bar"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question_string" />
+
+            <TextView
+                android:id="@+id/kind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingVertical="1dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="Kind" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/answer0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cloud"
+                android:backgroundTintMode="src_atop"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="#153667"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cloud"
+                android:backgroundTintMode="src_atop"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="#153667"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="sdfsdfsfdsdfsdfsdfasdfasdfsadfjjasdfkljksadfj;asdfasdfj;asdfjjasdfas;dfjsa;fdj" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cloud"
+                android:backgroundTintMode="src_atop"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="#153667"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cloud"
+                android:backgroundTintMode="src_atop"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="#153667"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="TextView" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

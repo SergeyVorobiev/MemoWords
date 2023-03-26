@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Shelves">
+
+    <fragment
+        android:id="@+id/Shelves"
+        android:name="com.vsv.memorizer.fragments.ShelvesFragment"
+        android:label="@string/shelves_fragment_label"
+        tools:layout="@layout/fragment_shelves">
+
+        <action
+            android:id="@+id/action_Shelves_to_Debug"
+            app:destination="@+id/Debug"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Shelves" />
+
+        <action
+            android:id="@+id/action_Shelves_to_Notebooks"
+            app:destination="@+id/Notebooks"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Shelves" />
+
+        <action
+            android:id="@+id/action_Shelves_to_Samples"
+            app:destination="@+id/Samples"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Shelves" />
+
+        <action
+            android:id="@+id/action_Shelves_to_Dictionaries"
+            app:destination="@id/Dictionaries"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Shelves" />
+
+        <action
+            android:id="@+id/action_Shelves_to_Spreadsheets"
+            app:destination="@id/Spreadsheets"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Shelves" />
+
+        <action
+            android:id="@+id/action_Shelves_to_MoveOrCopy"
+            app:destination="@+id/MoveOrCopy"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Shelves" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/MoveOrCopy"
+        android:name="com.vsv.memorizer.fragments.AddMoveCopyFragment"
+        android:label="@string/move_or_copy_label"
+        tools:layout="@layout/fragment_shelves">
+
+        <action
+            android:id="@+id/action_MoveOrCopy_to_Dictionaries"
+            app:destination="@id/Dictionaries"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/MoveOrCopy" />
+
+        <action
+            android:id="@+id/action_MoveOrCopy_to_Shelves"
+            app:destination="@id/Shelves"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/MoveOrCopy" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Debug"
+        android:name="com.vsv.memorizer.fragments.DebugFragment"
+        android:label="@string/debug_fragment_header"
+        tools:layout="@layout/fragment_debug">
+
+        <action
+            android:id="@+id/action_Debug_to_Shelves"
+            app:destination="@id/Shelves"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Debug" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Spreadsheets"
+        android:name="com.vsv.memorizer.fragments.SpreadsheetsFragment"
+        android:label="@string/spreadsheets_fragment_label"
+        tools:layout="@layout/fragment_spreadsheets">
+
+        <action
+            android:id="@+id/action_Spreadsheets_to_Shelves"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Spreadsheets"
+            app:destination="@id/Shelves" />
+
+        <action
+            android:id="@+id/action_Spreadsheets_to_Notebooks"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Spreadsheets"
+            app:destination="@id/Notebooks" />
+
+        <action
+            android:id="@+id/action_Spreadsheets_to_Dictionaries"
+            app:destination="@id/Dictionaries"
+            app:popUpTo="@id/Spreadsheets"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_Spreadsheets_to_Samples"
+            app:destination="@id/Samples"
+            app:popUpTo="@id/Spreadsheets"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_Spreadsheets_to_Sheets"
+            app:destination="@id/Sheets"
+            app:popUpTo="@id/Spreadsheets"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Sheets"
+        android:name="com.vsv.memorizer.fragments.SheetsFragment"
+        android:label="@string/sheets_fragment_label"
+        tools:layout="@layout/fragment_sheets">
+
+        <action
+            android:id="@+id/action_Sheets_to_Spreadsheets"
+            app:destination="@id/Spreadsheets"
+            app:popUpTo="@id/Sheets"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Notes"
+        android:name="com.vsv.memorizer.fragments.NotesFragment"
+        android:label="@string/notes_fragment_label"
+        tools:layout="@layout/fragment_notes">
+
+        <action
+            android:id="@+id/action_Notes_to_Notebooks"
+            app:destination="@id/Notebooks"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/Notebooks"
+        android:name="com.vsv.memorizer.fragments.NotebooksFragment"
+        android:label="@string/notebooks_fragment_label"
+        tools:layout="@layout/fragment_notebooks">
+
+        <action
+            android:id="@+id/action_Notebooks_to_Spreadsheets"
+            app:destination="@id/Spreadsheets"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Notebooks" />
+
+        <action
+            android:id="@+id/action_Notebooks_to_Notes"
+            app:destination="@id/Notes"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/Notebooks" />
+
+        <action
+            android:id="@+id/action_Notebooks_to_Shelves"
+            app:destination="@id/Shelves"
+            app:popUpTo="@id/Notebooks"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/DictionaryMerge"
+        android:name="com.vsv.memorizer.fragments.DictionaryMergeFragment"
+        android:label="@string/dictionary_merge_fragment_label">
+        <action
+            android:id="@+id/action_DictionaryMerge_to_Dictionaries"
+            app:destination="@id/Dictionaries"
+            app:popUpTo="@id/DictionaryMerge"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Dictionaries"
+        android:name="com.vsv.memorizer.fragments.DictionariesFragment"
+        android:label="@string/dictionaries_fragment_label"
+        tools:layout="@layout/fragment_dictionaries">
+
+        <action
+            android:id="@+id/action_Dictionaries_to_DictionaryMerge"
+            app:destination="@id/DictionaryMerge"
+            app:popUpTo="@id/Dictionaries"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Dictionaries_to_Samples"
+            app:destination="@id/Samples"
+            app:popUpTo="@id/Dictionaries"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Dictionaries_to_Shelves"
+            app:destination="@id/Shelves"
+            app:popUpTo="@id/Dictionaries"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Dictionaries_to_MoveOrCopy"
+            app:destination="@id/MoveOrCopy"
+            app:popUpTo="@id/Dictionaries"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Dictionaries_to_Spreadsheets"
+            app:destination="@id/Spreadsheets"
+            app:popUpTo="@id/Dictionaries"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Samples"
+        android:name="com.vsv.memorizer.fragments.SamplesFragment"
+        android:label="@string/samples_fragment_label"
+        tools:layout="@layout/fragment_samples">
+
+        <action
+            android:id="@+id/action_Samples_to_Dictionaries"
+            app:destination="@id/Dictionaries"
+            app:popUpTo="@id/Samples"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Samples_to_Samples"
+            app:destination="@id/Samples"
+            app:popUpTo="@id/Samples"
+            />
+        <action
+            android:id="@+id/action_Samples_to_Repetition"
+            app:destination="@id/Repetition"
+            app:popUpTo="@id/Samples"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Samples_to_Game"
+            app:destination="@id/Game"
+            app:popUpTo="@id/Samples"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Samples_to_Train"
+            app:destination="@id/Train"
+            app:popUpTo="@id/Samples"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Train"
+        android:name="com.vsv.memorizer.fragments.TrainFragment"
+        android:label="@string/train_fragment_label" >
+        <action
+            android:id="@+id/action_Train_to_Samples"
+            app:popUpTo="@id/Train"
+            app:destination="@id/Samples"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Repetition"
+        android:name="com.vsv.memorizer.fragments.RepetitionFragment"
+        android:label="@string/train_fragment_label" >
+        <action
+            android:id="@+id/action_Repetition_to_Samples"
+            app:popUpTo="@id/Repetition"
+            app:destination="@id/Samples"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/Game"
+        android:name="com.vsv.memorizer.fragments.GameFragment"
+        android:label="@string/game_fragment_label" >
+        <action
+            android:id="@+id/action_Game_to_Samples"
+            app:popUpTo="@id/Game"
+            app:destination="@id/Samples"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

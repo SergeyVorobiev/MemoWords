@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".fragments.RepetitionFragment">
+
+    <TextView
+        android:id="@+id/kindLabelTrain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:textColor="#594E4E"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/question_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="asdfsadfsadfsadfsadfsadflk;jsadf;sajkdf;sajfd;sfjs;adfkj" />
+
+    <TextView
+        android:id="@+id/question_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-black"
+        android:maxLines="3"
+        android:textAlignment="center"
+        android:textColor="#594E4E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:text="Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty memo" />
+
+    <TextView
+        android:id="@+id/answer_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-black"
+        android:maxLines="3"
+        android:textAlignment="center"
+        android:textColor="#594E4E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/example"
+        app:layout_constraintVertical_bias="0.19999999"
+        tools:text="Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty memo" />
+
+    <ImageView
+        android:id="@+id/trainSoundImage"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/speech_content_description"
+        android:src="@drawable/ic_sound"
+        app:layout_constraintBottom_toTopOf="@+id/kindLabelTrain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordCounter"
+        app:layout_constraintVertical_bias="0.19999999"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/wordCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#594E4E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1 from 10000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/replay"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorWhite"
+        android:backgroundTintMode="add"
+        android:clickable="true"
+        android:contentDescription="@string/repetition_replay"
+        android:src="@drawable/btn_repeat_off"
+        app:backgroundTintMode="add"
+        app:fabCustomSize="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="120dp"
+        app:rippleColor="#000C78"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/example"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="8"
+        android:textAlignment="viewStart"
+        android:textColor="#594E4E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_string"
+        tools:text="Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty memo \n Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty memo \n Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty mem Empty memo \n " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

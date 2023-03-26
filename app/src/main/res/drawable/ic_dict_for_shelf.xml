@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="20dp" android:height="20dp">
+        <shape android:shape="oval">
+            <!--
+            <gradient
+                android:startColor="#FFFFFF"
+                android:endColor="#FFFFFF"
+                android:angle="45" />
+            <stroke android:width="1px" android:color="@color/colorAccent" />-->
+        </shape>
+    </item>
+    <item android:width="18dp" android:height="16dp" android:gravity="center">
+        <bitmap android:src="@raw/book_test"
+            android:tintMode="multiply"
+            android:tint="#BADFEE"/>
+    </item>
+</layer-list>
+
+

@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainDictLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/bg_item_dictionary"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:outlineProvider="none">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="48dp"
+        android:minHeight="48dp">
+
+        <ImageView
+            android:id="@+id/dictIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="3dp"
+            android:adjustViewBounds="true"
+            android:alpha="1"
+            android:contentDescription="@string/dict_icon_content_description"
+            android:tintMode="multiply"
+            app:srcCompat="@drawable/ic_dict_ripple"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/checker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/ic_check2"
+            android:backgroundTintMode="multiply"
+            android:contentDescription="@string/dict_icon_content_description"
+            android:foreground="@drawable/ic_check2"
+            tools:ignore="ImageContrastCheck" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="2dp"
+            android:text="@string/dict_label"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/notAnswered"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/dictName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/bg_dict_title"
+            android:ellipsize="end"
+            android:fontFamily="serif"
+            android:maxLines="2"
+            android:paddingHorizontal="3dp"
+            android:paddingBottom="5dp"
+            android:textAllCaps="false"
+            android:textColor="#593E6C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:text="Name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-black"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp,TextContrastCheck"
+                tools:text="100%" />
+
+            <TextView
+                android:id="@+id/dictLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_dict_label"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textAlignment="viewEnd"
+                android:textColor="#000000"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp"
+                tools:text="Some future info" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

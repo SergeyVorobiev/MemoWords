@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"  android:shape="rectangle">
+    <item android:state_selected="true"
+        android:drawable="@color/samplePressed"/>
+    <item android:state_pressed="true"
+        android:drawable="@color/samplePressed"/> --><!-- pressed -->
+    <item android:state_focused="true"
+        android:drawable="@color/samplePressed" />
+    <item android:state_activated="true"
+        android:drawable="@color/samplePressed" />
+    <item android:state_active="true"
+        android:drawable="@color/samplePressed" />
+    <item android:drawable="@color/sample"/> <!-- default -->
+</selector>

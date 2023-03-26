@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp">
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:id="@+id/logoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/sign_out_dialog_header"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/accImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@string/account_image_content_description" />
+
+                <TextView
+                    android:id="@+id/accLetter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:height="50dp"
+                    android:elegantTextHeight="true"
+                    android:maxLength="1"
+                    android:textAllCaps="true"
+                    android:textColor="#2B2B2B"
+                    android:textIsSelectable="false"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    tools:text="a" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/accountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textColor="#4A4545"
+                android:textStyle="bold"
+                tools:text="Сергей Воробьев" />
+
+            <TextView
+                android:id="@+id/accountEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ellipsize="end"
+                android:fontFamily="monospace"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textColor="#4A4545"
+                android:textStyle="bold"
+                tools:text="fxeipi@gmail.com" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/mobileInternet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:text="@string/sign_out_dialog_mobile_internet"
+                android:textColor="#757575"
+                android:visibility="gone"
+                tools:ignore="TextContrastCheck" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/autoLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:text="@string/sign_out_dialog_auto_logout"
+                android:textColor="#3E3E3E"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/btn_login"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#1355A5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/privatePolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_policy"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:minHeight="28dp"
+                android:paddingVertical="2dp"
+                android:text="@string/privacy_policy_text"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#304361"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/count_drawable"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/notesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#2B365A"
+                    android:textStyle="bold"
+                    tools:text="Notes" />
+
+                <TextView
+                    android:id="@+id/notesCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#141C37"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/count_drawable"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dictLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#2B365A"
+                    android:textStyle="bold"
+                    tools:text="Dictionaries" />
+
+                <TextView
+                    android:id="@+id/dictCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#141C37"
+                    android:textStyle="bold"
+                    tools:text="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@drawable/count_drawable"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight">
+
+                <TextView
+                    android:id="@+id/sampleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#2B365A"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights"
+                    tools:text="Samples" />
+
+                <TextView
+                    android:id="@+id/sampleCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_weight="0"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#141C37"
+                    android:textStyle="bold"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#371A1A"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/star_line"
+                tools:text="Новичок" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_graph_panel"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/scoreLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/score_account"
+                        android:textColor="#371A1A"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/scoreValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#371A1A"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck"
+                        tools:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/allScoreLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/all_score_account"
+                        android:textColor="#371A1A"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/allScoreValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#371A1A"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck"
+                        tools:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp">
+
+                    <TextView
+                        android:id="@+id/allTrainTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/all_train_account"
+                        android:textColor="#371A1A"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/allTrainTimeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#371A1A"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck"
+                        tools:text="0" />
+                </LinearLayout>
+
+                <com.vsv.graphs.DictionaryGraph
+                    android:id="@+id/graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="2dp"
+                    custom:avgLine="false"
+                    custom:barColor="#FF9191"
+                    custom:barThickness="0.8"
+                    custom:maxBarsCount="200" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:maxLines="1"
+                    android:text="@string/zero_number"
+                    android:textAlignment="viewStart"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rememberedWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:foregroundGravity="center_vertical"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="#401919"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:text="10000" />
+
+                <TextView
+                    android:id="@+id/maxWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:maxLines="1"
+                    android:textAlignment="viewEnd"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    tools:text="20000" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rememberBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/remember_bar_description"
+                app:srcCompat="@drawable/rate_remember_bar"
+                tools:ignore="ImageContrastCheck" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelLogout"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_dialog_standard_cancel"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/dialog_cancel"
+                    android:textColor="#FFF" />
+
+                <Button
+                    android:id="@+id/applyLogout"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_dialog_delete"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/sign_out_button_label"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/policy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/policyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

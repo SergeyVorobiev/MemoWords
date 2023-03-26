@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/brizz">
+    <item android:height="26dp" android:width="26dp">
+        <bitmap android:src="@raw/ic_check_f"
+            android:tint="#07A800"/>
+    </item>
+</ripple>

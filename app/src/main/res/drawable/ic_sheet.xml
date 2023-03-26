@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/darkBrizz">
+    <item>
+        <layer-list>
+
+            <item android:width="40dp" android:height="40dp" android:gravity="center">
+                <bitmap android:src="@raw/ic_sheet_f2"
+                    android:tintMode="multiply"
+                    android:tint="#00C9A0"/>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

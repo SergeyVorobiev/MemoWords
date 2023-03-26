@@ -1,0 +1,377 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/bg_item_dictionary2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minWidth="48dp"
+                android:minHeight="48dp">
+
+                <ImageView
+                    android:id="@+id/dictIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:adjustViewBounds="true"
+                    android:alpha="1"
+                    android:contentDescription="@string/dict_icon_content_description"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/ic_dict_ripple"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/dictCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="#0B0713"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp"
+                    tools:text="5000" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="2dp"
+                    android:paddingVertical="2dp"
+                    android:text="@string/dict_label"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/notAnswered"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/dictName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/bg_dict_title"
+                    android:ellipsize="end"
+                    android:fontFamily="serif"
+                    android:maxLines="2"
+                    android:paddingHorizontal="3dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#412A51"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="Name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="2dp">
+
+                    <TextView
+                        android:id="@+id/percentage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="bottom"
+                        android:maxLines="1"
+                        android:paddingBottom="2dp"
+                        android:textColor="#1E2B51"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp,TextContrastCheck"
+                        tools:text="100%" />
+
+                    <TextView
+                        android:id="@+id/dictLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_dict_label"
+                        android:ellipsize="end"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#000000"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        tools:ignore="SmallSp"
+                        tools:text="Some future info" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/sheetDataDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:alpha="0.4"
+            android:background="@color/brizz" />
+
+        <LinearLayout
+            android:id="@+id/sheetDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="2dp"
+                    android:contentDescription="@string/dict_rate_content_description"
+                    app:srcCompat="@drawable/rate_stars"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/trainedCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="2dp"
+                    android:background="@drawable/rate_train_bar"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:gravity="bottom|end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="3dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#472A2A"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_gym"
+                    tools:text="10000 / 10000" />
+
+                <TextView
+                    android:id="@+id/rememberedCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="2dp"
+                    android:background="@drawable/rate_train_bar"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:gravity="bottom|end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="3dp"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#472A2A"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_medal"
+                    tools:text="10000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/btn_update"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingHorizontal="2dp"
+                        android:text="@string/update"
+                        android:textColor="#005FD5"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/btnAuthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@string/dict_author_content_description"
+                        app:srcCompat="@drawable/btn_facebook"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/graph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:contentDescription="@string/dict_graph_content_description"
+                        app:srcCompat="@drawable/btn_graph_transition"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/spreadsheetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="1dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#404040"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="SmallSp,TextContrastCheck"
+                    tools:text="sad;fjksad;fjsa;dlfjsad;lfjsadflkjsdklfjs;dflajsfl;dj" />
+
+                <TextView
+                    android:id="@+id/sheetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="1dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#404040"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="SmallSp,TextContrastCheck"
+                    tools:text="sad;fjksad;fjsa;dlfjsad;lfjsadflkjsdklfjs;dflajsfl;dj" />
+
+                <TextView
+                    android:id="@+id/spreadsheetId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="3dp"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="#054337"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp"
+                    tools:text="dsfsfsdfsdfsdf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:visibility="gone" />
+</LinearLayout>

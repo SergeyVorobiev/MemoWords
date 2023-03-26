@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="14dp" android:height="14dp">
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#B2DDFF"
+                android:endColor="#E6F5FF"
+                android:angle="45" />
+            <stroke android:width="1px" android:color="#0099FF" />
+        </shape>
+    </item>
+    <item android:width="11dp" android:height="11dp" android:gravity="center">
+        <bitmap android:src="@raw/ic_medal_eff"
+            android:tintMode="multiply"
+            android:tint="#FFAA00"/>
+    </item>
+</layer-list>

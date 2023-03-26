@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_menu">
+    <item
+        android:id="@+id/action_spreadsheets"
+        android:orderInCategory="100"
+        android:title="@string/action_spreadsheets"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_find_word"
+        android:orderInCategory="100"
+        android:title="@string/action_find_word"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sign_in"
+        android:icon="@drawable/googleg_standard_color_18"
+        android:title="@string/action_sign_in"
+        app:showAsAction="ifRoom" />
+
+    <item android:title="@string/action_sort_by_date"
+        android:id="@+id/action_sort"
+        android:icon="@drawable/googleg_standard_color_18"
+        app:showAsAction="never"/>
+
+</menu>

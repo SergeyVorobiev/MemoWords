@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/deleteColor">
+    <item>
+        <bitmap android:src="@raw/ic_more_f3"
+            android:tint="#00EBFF"/>
+    </item>
+</ripple>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DictionaryGraph">
+        <attr name="barThickness" format="float" />
+        <attr name="barColor" format="reference|color" />
+        <attr name="avgLineColor" format="reference|color" />
+        <attr name="avgLine" format="boolean" />
+        <attr name="maxBarsCount" format="integer" />
+        <attr name="gameTextColor" format="color" />
+    </declare-styleable>
+</resources>

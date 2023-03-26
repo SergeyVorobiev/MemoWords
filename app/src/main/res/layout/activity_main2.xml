@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/search_menu3"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6200EE"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/shelvesTab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/tab_edge_margin"
+                android:layout_marginTop="@dimen/tab_top_margin"
+                android:layout_marginEnd="@dimen/tab_center_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_hidden"
+                android:elegantTextHeight="true"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textOff="@string/shelves_title"
+                android:textOn="@string/shelves_title"
+                android:textSize="13sp"
+                tools:ignore="TextContrastCheck" />
+
+            <ToggleButton
+                android:id="@+id/notebooksTab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/tab_center_margin"
+                android:layout_marginTop="@dimen/tab_top_margin"
+                android:layout_marginEnd="@dimen/tab_center_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_hidden"
+                android:elegantTextHeight="true"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textOff="@string/notebooks_title"
+                android:textOn="@string/notebooks_title"
+                android:textSize="13sp"
+                tools:ignore="TextContrastCheck" />
+
+            <ToggleButton
+                android:id="@+id/spreadsheetsTab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/tab_center_margin"
+                android:layout_marginTop="@dimen/tab_top_margin"
+                android:layout_marginEnd="@dimen/tab_edge_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_hidden"
+                android:elegantTextHeight="true"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textOff="@string/spreadsheets_title"
+                android:textOn="@string/spreadsheets_title"
+                android:textSize="13sp"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_top_info"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck"
+            tools:text="0 / 500" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:navGraph="@navigation/nav_graph" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

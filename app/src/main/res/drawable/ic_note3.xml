@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/darkBrizz">
+    <item>
+        <layer-list>
+            <item android:width="12dp" android:height="12dp" android:gravity="center">
+                <shape android:shape="oval">
+                    <gradient
+                        android:startColor="#EBEEFF"
+                        android:endColor="#EEFAFF"
+                        android:angle="45" />
+                    <stroke android:width="1px" android:color="#FFA35A" />
+                </shape>
+            </item>
+            <item android:width="11dp" android:height="11dp" android:gravity="center">
+                <bitmap android:src="@raw/ic_receipt2"
+                    android:tintMode="multiply"
+                    android:tint="#FD0000"/>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

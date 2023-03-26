@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_default"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/newSampleDialogHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            tools:text="New sample" />
+
+        <CheckBox
+            android:id="@+id/resetProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:minHeight="48dp"
+            android:text="@string/reset_progress" />
+
+        <EditText
+            android:id="@+id/newSampleLeftInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sample_dialog_left_value_hint"
+            android:inputType="text"
+            android:maxLength="150"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/newSampleRightInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/sample_dialog_right_value_hint"
+            android:inputType="text"
+            android:maxLength="150"
+            android:maxLines="2"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <Button
+            android:id="@+id/swapSamples"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="2dp"
+            android:background="@drawable/btn_swap_samples"
+            android:contentDescription="@string/swap_content_description"
+            android:scaleX="2"
+            android:scaleY="2" />
+
+        <EditText
+            android:id="@+id/newSampleKind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="@string/sample_dialog_kind_hint"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <EditText
+            android:id="@+id/newSampleExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/sample_dialog_example_hint"
+            android:inputType="textMultiLine"
+            android:maxLength="1500"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newSampleCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@drawable/btn_dialog_standard_cancel"
+            android:text="@string/dialog_cancel"
+            android:textColor="#FFF"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/newSampleOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@drawable/btn_dialog_standard_ok"
+            android:text="@string/dialog_ok"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>

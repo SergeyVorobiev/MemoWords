@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_menu">
+    <item
+        android:id="@+id/action_search"
+        android:menuCategory="container"
+        android:orderInCategory="1"
+        android:title="@string/action_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_login"
+        android:icon="@drawable/googleg_standard_color_18"
+        android:menuCategory="container"
+        android:orderInCategory="2"
+        android:title="@string/action_sign_in"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/btn_more"
+        android:menuCategory="container"
+        android:orderInCategory="3"
+        android:title=""
+        app:showAsAction="always" />
+
+</menu>

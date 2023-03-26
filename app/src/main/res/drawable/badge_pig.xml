@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@raw/badge_pig1"
+    android:tint="#FF92D7"
+    android:tintMode="multiply" />
+
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_ball"
+            android:tint="#8DDBFF"
+            android:tintMode="multiply"/>
+    </item>
+    <item android:left="20dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_bug3"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="40dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_bug"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="60dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_cannon"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="80dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_castle"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="100dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_stars"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="120dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_cup"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="140dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_diamond"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="160dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_dice"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="180dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_helmet"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="200dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_icecream"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="220dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_leaf"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="240dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_pie"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="260dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_pig"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="280dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_pokemon"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="300dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_puzzle"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="320dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_rabbit"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="340dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_snow"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="360dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_umbrella"
+            android:tint="#8DDBFF"/>
+    </item>
+    <item android:left="380dp" android:width="18dp" android:height="18dp">
+        <bitmap android:src="@raw/badge_star"
+            android:tint="#8DDBFF"/>
+    </item>
+</layer-list>

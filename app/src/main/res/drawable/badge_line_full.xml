@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="start"
+    android:clipOrientation="horizontal">
+<layer-list>
+    <item android:drawable="@drawable/badge_ball" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_bug" android:left="20dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_bug2" android:left="40dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_cannon" android:left="60dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_castle" android:left="80dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_stars" android:left="100dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_cup" android:left="120dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_diamond" android:left="140dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_dice" android:left="160dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_helmet" android:left="180dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_icecream" android:left="200dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_leaf" android:left="220dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_pie" android:left="240dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_pig" android:left="260dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_pokemon" android:left="280dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_puzzle" android:left="300dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_rabbit" android:left="320dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_snow" android:left="340dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_umbrella" android:left="360dp" android:width="18dp" android:height="18dp">
+
+    </item>
+    <item android:drawable="@drawable/badge_star" android:left="380dp" android:width="18dp" android:height="18dp">
+
+    </item>
+</layer-list>
+</clip>

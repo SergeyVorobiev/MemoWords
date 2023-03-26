@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="1dp"
+        android:background="@drawable/bg_item_note"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:maxLines="5"
+            android:textColor="#2D2D40"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_note_transition"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/bg_item_number"
+            android:ellipsize="end"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="1dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#263D65"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp"
+            tools:text="500" />
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:alpha="0.4"
+                android:background="#067350" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                android:lineSpacingExtra="8sp"
+                android:textColor="#372B34"
+                android:textSize="16sp"
+                android:typeface="normal"
+                tools:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:visibility="gone" />
+</LinearLayout>

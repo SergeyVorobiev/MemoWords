@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_default"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/new_shelf_dialog_icon_content_description"
+        app:srcCompat="@drawable/ic_dict"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/updateDictionaryDialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/update_dictionary_dialog_header"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/updateFromSheetSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:text="@string/dictionary_dialog_update_switch_label" />
+
+    <LinearLayout
+        android:id="@+id/updateNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/updateNameDictionaryInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:hint="@string/dictionary_dialog_input_name_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A" />
+
+        <TextView
+            android:id="@+id/leftLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/choose_left_language"
+            android:textColor="#515151"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+        <Spinner
+            android:id="@+id/chooseLeftLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/chooser_left_language_description"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/rightLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/choose_right_language"
+            android:textColor="#515151"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+        <Spinner
+            android:id="@+id/chooseRightLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/chooser_right_language_description"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/updateSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/deleteSamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:text="@string/dictionary_dialog_delete_samples_checkbox" />
+
+        <CheckBox
+            android:id="@+id/updateExamples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:text="@string/dictionary_update_examples_checkbox" />
+
+        <LinearLayout
+            android:id="@+id/spreadsheetItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_item_spreadsheet"
+            android:minHeight="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/spreadsheetName"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingHorizontal="5dp"
+                android:textColor="#003A3C"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/spreadsheetId"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingHorizontal="5dp"
+                android:textColor="#006064"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck"
+                tools:text="Hello" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sheetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:background="@drawable/bg_item_sheet"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:padding="5dp"
+            android:textColor="#3C3C3C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Hello" />
+
+        <TextView
+            android:id="@+id/updatedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="1dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Updated: 21/07/2022"
+            android:textAlignment="viewEnd"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/updateDictionaryCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:background="@drawable/btn_dialog_standard_cancel"
+            android:text="@string/dialog_cancel"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/updateDictionaryOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:background="@drawable/btn_dialog_standard_ok"
+            android:text="@string/update"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tab_top_margin">6dp</dimen>
+    <dimen name="tab_edge_margin">4dp</dimen>
+    <dimen name="tab_center_margin">2dp</dimen>
+    <dimen name="item_chosen_spreadsheet_id_size">8sp</dimen>
+    <dimen name="policy_big_text_size">18sp</dimen>
+    <dimen name="policy_medium_text_size">16sp</dimen>
+    <dimen name="policy_small_text_size">14sp</dimen>
+    <dimen name="train_text_size">24sp</dimen>
+    <dimen name="train_text_size_replaced">16sp</dimen>
+    <dimen name="word_game_size">13sp</dimen>
+    <dimen name="badge_size">15dp</dimen>
+    <dimen name="badge_size_mini">10dp</dimen>
+</resources>

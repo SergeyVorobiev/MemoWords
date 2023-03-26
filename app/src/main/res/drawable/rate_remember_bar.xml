@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_remember_line_fill" android:height="22dp" android:gravity="center"/>
+
+    <item android:drawable="@drawable/bg_remember_line" android:height="22dp" android:gravity="center"/>
+
+    <item android:drawable="@drawable/badge_line" android:height="18dp" android:gravity="center"/>
+
+    <item android:drawable="@drawable/badge_line_full" android:height="18dp" android:gravity="center"/>
+</layer-list>

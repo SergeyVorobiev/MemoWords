@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/spreadsheetItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginVertical="2dp"
+        android:alpha="1"
+        android:defaultFocusHighlightEnabled="false"
+        android:fadingEdge="none"
+        android:focusedByDefault="false"
+        android:outlineProvider="none"
+        android:requiresFadingEdge="none"
+        android:scrollbarSize="0dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:circularflow_defaultRadius="0dp"
+        app:layout_dodgeInsetEdges="none"
+        app:layout_insetEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:background="@drawable/bg_item_spreadsheet"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:adjustViewBounds="true"
+                android:alpha="1"
+                android:contentDescription="@string/icon_spreadsheet_content_description"
+                android:padding="3dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                app:srcCompat="@drawable/ic_spreadsheet_transition"
+                tools:ignore="ImageContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#D5FFD7"
+                    android:ellipsize="end"
+                    android:fontFamily="casual"
+                    android:maxLines="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#303933"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp"
+                    tools:text="34590409jssdlfjsdflj430asjdfksadf;asjfwoeiprfjs90sdf0jpoasidfj;" />
+
+                <TextView
+                    android:id="@+id/spreadsheetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="3dp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:textColor="#3C3838"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Ndm" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingVertical="3dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#404742"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/badge_star_r"
+                    tools:ignore="SmallSp,TextContrastCheck"
+                    tools:text="notebooks" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ssCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/preset_ss_content_description"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_check"
+                tools:ignore="ImageContrastCheck" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/paddingView"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:visibility="gone" />
+</LinearLayout>
