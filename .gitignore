@@ -30,3 +30,10 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+app/resources/ImagesSources/*
+app/src/main/res/roadmap
+app/debug/app-debug.aab
+app/release/app-release.aab
+app/src/main/res/spec
+app/src/main/res/usefulCodeParts
